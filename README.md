@@ -35,5 +35,10 @@ yarn
 
 # Other Technologies
 
-# File Structure 
+#### internationalization
+- [react-i18next](https://react.i18next.com/getting-started)
+- [i18next](https://www.i18next.com)
+- [i18next-browser-languagedetector](https://react.i18next.com/legacy-v9/step-by-step-guide#c-auto-detect-the-user-language)
+
+# File Structure
 
