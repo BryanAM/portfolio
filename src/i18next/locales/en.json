@@ -1,3 +1,6 @@
 {
-  "common": "welcome to your app"
+  "common": {
+    "change-lng": "Change Language",
+    "welcome": "welcome to your app"
+  }
 }

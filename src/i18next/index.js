@@ -13,10 +13,10 @@ const options = {
 
   resources: {
     en: {
-      common: en.en,
+      common: en,
     },
     jp: {
-      common: jp.jp,
+      common: jp,
     },
   },
 
@@ -24,10 +24,10 @@ const options = {
   defaultNS: 'common',
 
   react: {
-    wait: false,
     bindI18n: 'languageChanged loaded',
     bindStore: 'added removed',
     nsMode: 'default',
+    useSuspense: false,
   },
 };
 
