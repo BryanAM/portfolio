@@ -26,6 +26,14 @@ yarn
 # CLI Commands
 
 # Internationalization
+This app uses [react-i18next](https://react.i18next.com/getting-started) for internationalization. react-i18next uses a config file found in `src/i18next/index.js`. The translation files are json and are found here: `src/i18next/locales`. Add or remove files as necessary. You'll need to update the config file imports and defaults to fit your app's needs.
+
+The generic useage for the translation is to import the `useTranslation` hook and declare it in a destructured array. There is an example in `App.js`.
+
+#### Inferring a translated string
+```
+{t('json.path.to.translated.string')}
+```
 
 # Theming
 
