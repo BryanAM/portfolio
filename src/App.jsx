@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './App.css';
 import i18n from './i18next';
-import Card from './components/Card/Card';
+import { Card } from './components/index';
 
 function App() {
   const [t] = useTranslation();
