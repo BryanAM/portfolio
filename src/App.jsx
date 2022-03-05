@@ -18,11 +18,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
-        {t('common.welcome')}
-      </h1>
-      <button type="button" onClick={changeLng}>{t('common.change-lng')}</button>
-      <Card />
+      <Card>
+        <h1>
+          {t('common.welcome')}
+        </h1>
+        <button type="button" onClick={changeLng}>{t('common.change-lng')}</button>
+      </Card>
     </div>
   );
 }
