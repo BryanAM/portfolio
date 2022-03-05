@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  border: 1px solid #000;
+  border: 3px double #000;
   border-radius: 8px;
   box-shadow: 5px 5px 0px 0px #1180c9,
     10px 10px 0px 0px #289FED,
@@ -23,11 +23,4 @@
     40px 40px 0px 0px rgba(245, 249, 255, 0.5),
     5px 5px 15px 5px rgba(0,0,0,0);
   }
-}
-
-.palm{
-  position: absolute;
-  font-size: 24px;
-  top: -27px;
-  left: 0;
 }

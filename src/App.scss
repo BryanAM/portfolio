@@ -4,3 +4,19 @@
   align-items: center;
   transform: translateY(100%);
 }
+
+.change-language-btn {
+  background-color: #E1EEFF;
+  border: 1px solid #FFF;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+
+  &:hover, &:focus {
+    border: 1px solid #289FED;
+    background-color: #CAE6FF;
+    transition: background-color 300ms ease-in-out;
+    transition: border 300ms ease-in;
+  }
+}

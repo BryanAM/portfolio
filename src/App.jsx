@@ -22,8 +22,7 @@ function App() {
         <h1>
           {t('common.welcome')}
         </h1>
-        <button type="button" onClick={changeLng}>{t('common.change-lng')}</button>
-        <span className="palm">🌴</span>
+        <button className="change-language-btn" type="button" onClick={changeLng}>{t('common.change-lng')}</button>
       </Card>
     </div>
   );
