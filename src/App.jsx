@@ -23,6 +23,7 @@ function App() {
           {t('common.welcome')}
         </h1>
         <button type="button" onClick={changeLng}>{t('common.change-lng')}</button>
+        <span className="palm">🌴</span>
       </Card>
     </div>
   );
