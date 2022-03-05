@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './App.css';
+import './App.scss';
 import i18n from './i18next';
 import { Card } from './components/index';
 
