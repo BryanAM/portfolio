@@ -5,6 +5,7 @@ import { en, jp } from './locales/index';
 const options = {
   interpolation: {
     escapeValue: false,
+    useSuspense: false,
   },
 
   caches: ['localStorage', 'cookie'],
