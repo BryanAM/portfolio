@@ -1,3 +1,5 @@
+@import './assets/colors';
+
 .App {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@
   font-weight: bold;
 
   &:hover, &:focus {
-    border: 1px solid #289FED;
+    border: 1px solid $blue-500;
     background-color: #CAE6FF;
     transition: background-color 300ms ease-in-out;
     transition: border 300ms ease-in;
