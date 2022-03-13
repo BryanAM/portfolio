@@ -1,6 +1,9 @@
 # React Starter ⚛️
 Get to coding faster with my flavor 🍦 and structure  🏗️ of [react](https://reactjs.org/docs/getting-started.html). 
 
+![screen-gif](./starter.gif)
+
+
 ### Table Of Contents
 - [Getting Started](#getting-started)
 - [CLI Commands](#cli-commands)
