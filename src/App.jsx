@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App theme">
       <Card>
         <h1>
           {t('common.welcome')}

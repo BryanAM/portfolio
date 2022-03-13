@@ -1,23 +1,24 @@
-@import './assets/colors';
+@use 'assets' as *;
 
 .App {
+  height: 100%;
+  background-color: var(--app-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(100%);
 }
 
 .change-language-btn {
-  background-color: #E1EEFF;
-  border: 1px solid #FFF;
-  padding: 8px;
-  border-radius: 10px;
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
+  color: var(--button-text-color);
+  padding: $rhythm;
+  border-radius: $rhythm / 2;
   font-size: 16px;
   font-weight: bold;
 
   &:hover, &:focus {
-    border: 1px solid $blue-500;
-    background-color: #CAE6FF;
+    background-color: var(--button-bg-color-hover);
     transition: background-color 300ms ease-in-out;
     transition: border 300ms ease-in;
   }

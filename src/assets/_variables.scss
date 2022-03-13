@@ -1,0 +1,32 @@
+@use './colors' as *;
+// Spacing
+$rhythm: 8px;
+
+// Regular Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
+
+// App
+$AppBgColor: $white;
+
+//Button 
+$ButtonBGColor: $blue-400;
+$ButtonBGColorHover: $blue-800;
+$ButtonBorderColor: $blue-800;
+$ButtonTextColor: $white;
+
+// Dark Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
+
+// App
+$AppBgColor: $white;
+
+//Button 
+$ButtonBGColor: $blue-500;
+$ButtonTextColor: $white;
+
+// Coffee Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
+
+// App
+$AppBgColor: $white;
+
+//Button 
+$ButtonBGColor: $blue-500;
+$ButtonTextColor: $white;

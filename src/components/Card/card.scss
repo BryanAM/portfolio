@@ -1,4 +1,7 @@
+@use '../../assets/' as *;
+
 .card {
+  margin-top: $rhythm * 10;
   position: relative;
   border: 3px double #000;
   border-radius: 8px;
