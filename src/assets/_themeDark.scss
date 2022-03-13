@@ -2,5 +2,18 @@
 
 .theme-dark {
   // easy way to get around name-space?
-  --app-bg-color: #{$AppBgColor};
+  --app-bg-color: #{$DarkAppBgColor};
+  --app-text-color: #{$DarkTextColor};
+
+
+  // Button
+  --button-bg-color: #{$DarkButtonBGColor};
+  --button-bg-color-hover: #{$DarkButtonBGColorHover};
+  --button-border-color: #{$DarkButtonBorderColor};
+  --button-text-color: #{$ButtonTextColor};
+
+  // Card
+  --card-border-color: #{$DarkCardBorderColor};
+  --card-box-shadow: #{$DarkCardBoxShadow};
+  --card-box-shadow-hover: #{$DarkCardBoxShadowHover};
 }

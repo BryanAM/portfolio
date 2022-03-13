@@ -1,11 +1,19 @@
 @use 'assets' as *;
 
 .App {
+  color: var(--app-text-color);
   height: 100%;
   background-color: var(--app-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.theme-button {
+  background-color: unset;
+  border: none;
+  font-size:x-large;
+  margin-top: $rhythm * 2;
 }
 
 .change-language-btn {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './App.scss';
 import i18n from './i18next';
@@ -6,6 +6,7 @@ import { Card } from './components/index';
 
 function App() {
   const [t] = useTranslation();
+  const [theme, setTheme] = useState('theme');
 
   const changeLng = () => {
     const lng = i18n.language === 'en' ? 'jp' : 'en';
@@ -16,8 +17,20 @@ function App() {
       });
   };
 
+  useEffect(() => {
+    const schema = document.querySelector('meta[name="theme-color"]');
+    const style = getComputedStyle(document.body.querySelector('.App'));
+    const headerColor = style.getPropertyValue('--app-bg-color');
+    schema.setAttribute('content', headerColor);
+  }, [theme]);
+
   return (
-    <div className="App theme">
+    <div className={`App ${theme}`}>
+      <div>
+        <button className="theme-button" type="button" onClick={() => setTheme('theme')}>🐠</button>
+        <button className="theme-button" type="button" onClick={() => setTheme('theme-dark')}>🌙</button>
+        <button className="theme-button" type="button" onClick={() => setTheme('theme-coffee')}>☕</button>
+      </div>
       <Card>
         <h1>
           {t('common.welcome')}

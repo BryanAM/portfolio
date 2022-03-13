@@ -2,5 +2,18 @@
 
 .theme-coffee {
   // easy way to get around name-space?
-  --app-bg-color: #{$AppBgColor};
+  --app-bg-color: #{$CoffeeAppBgColor};
+  --app-text-color: #{$CoffeeTextColor};
+
+
+  // Button
+  --button-bg-color: #{$CoffeeButtonBGColor};
+  --button-bg-color-hover: #{$CoffeeButtonBGColorHover};
+  --button-border-color: #{$CoffeeButtonBorderColor};
+  --button-text-color: #{$CoffeeButtonTextColor};
+
+  // Card
+  --card-border-color: #{$CoffeeCardBorderColor};
+  --card-box-shadow: #{$CoffeeCardBoxShadow};
+  --card-box-shadow-hover: #{$CoffeeCardBoxShadowHover};
 }

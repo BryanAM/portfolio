@@ -6,6 +6,7 @@ $rhythm: 8px;
 
 // App
 $AppBgColor: $white;
+$TextColor: $black;
 
 //Button 
 $ButtonBGColor: $blue-400;
@@ -13,20 +14,79 @@ $ButtonBGColorHover: $blue-800;
 $ButtonBorderColor: $blue-800;
 $ButtonTextColor: $white;
 
+// Card
+$CardBorderColor: $black;
+$CardBoxShadow: 5px 5px 0px 0px #1180c9,
+10px 10px 0px 0px #289FED,
+15px 15px 0px 0px #5FB8FF,
+20px 20px 0px 0px #A1D8FF,
+5px 5px 15px 5px rgba(0,0,0,0);
+
+$CardBoxShadowHover: 5px 5px 0px 0px #1180c9,
+10px 10px 0px 0px #289FED,
+15px 15px 0px 0px #5FB8FF,
+20px 20px 0px 0px #A1D8FF,
+25px 25px 0px 0px #CAE6FF,
+30px 30px 0px 0px #E1EEFF,
+35px 35px 0px 0px rgba(245, 249, 255, 0.75),
+40px 40px 0px 0px rgba(245, 249, 255, 0.5),
+5px 5px 15px 5px rgba(0,0,0,0);
 // Dark Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
 // App
-$AppBgColor: $white;
+$DarkAppBgColor: $midnight-700;
+$DarkTextColor: $white;
 
 //Button 
-$ButtonBGColor: $blue-500;
-$ButtonTextColor: $white;
+$DarkButtonBGColor: $purple-300;
+$DarkButtonBGColorHover: $purple-200;
+$DarkButtonBorderColor: $purple-200;
+$DarkButtonTextColor: $white;
+
+// Card
+$DarkCardBorderColor: $white;
+$DarkCardBoxShadow: 5px 5px 0px 0px $purple-500,
+10px 10px 0px 0px $purple-400,
+15px 15px 0px 0px $purple-300,
+20px 20px 0px 0px $purple-200,
+5px 5px 15px 5px rgba(0,0,0,0);
+
+$DarkCardBoxShadowHover: 5px 5px 0px 0px $purple-600,
+10px 10px 0px 0px $purple-500,
+15px 15px 0px 0px $purple-400,
+20px 20px 0px 0px $purple-300,
+25px 25px 0px 0px $purple-200,
+30px 30px 0px 0px rgba(187, 140, 255, 0.75),
+35px 35px 0px 0px rgba(187, 140, 255, 0.5),
+40px 40px 0px 0px rgba(187, 140, 255, 0.25),
+5px 5px 15px 5px rgba(0,0,0,0);
 
 // Coffee Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
 // App
-$AppBgColor: $white;
+$CoffeeAppBgColor: $tan-400;
+$CoffeeTextColor: $brown-500;
 
 //Button 
-$ButtonBGColor: $blue-500;
-$ButtonTextColor: $white;
+$CoffeeButtonBGColor: $sea-500;
+$CoffeeButtonBGColorHover: $sea-700;
+$CoffeeButtonBorderColor: $sea-700;
+$CoffeeButtonTextColor: $tan-200;
+
+// Card
+$CoffeeCardBorderColor: $tan-100;
+$CoffeeCardBoxShadow: 5px 5px 0px 0px $sea-500,
+10px 10px 0px 0px $sea-400,
+15px 15px 0px 0px $sea-300,
+20px 20px 0px 0px $sea-200,
+5px 5px 15px 5px rgba(0,0,0,0);
+
+$CoffeeCardBoxShadowHover: 5px 5px 0px 0px $sea-600,
+10px 10px 0px 0px $sea-500,
+15px 15px 0px 0px $sea-400,
+20px 20px 0px 0px $sea-300,
+25px 25px 0px 0px $sea-200,
+30px 30px 0px 0px rgba(196, 231, 231, 0.75),
+35px 35px 0px 0px rgba(196, 231, 231, 0.3),
+40px 40px 0px 0px rgba(196, 231, 231, 0.1),
+5px 5px 15px 5px rgba(0,0,0,0);
