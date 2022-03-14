@@ -17,7 +17,7 @@ Get to coding faster with my flavor 🍦 and structure  🏗️ of [react](https
 # Getting Started
 Clone the project to your local machine
 ```zsh
-git clone https://github.com/BryanAM/react-starter.git
+git fork https://github.com/BryanAM/react-starter.git
 ```
 
 Install dependencies
