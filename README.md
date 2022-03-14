@@ -15,11 +15,10 @@ Get to coding faster with my flavor 🍦 and structure  🏗️ of [react](https
 - [File Structure](#file-structure)
 
 # Getting Started
-Fork the project to your local machine
-[Start App Here](https://github.com/BryanAM/starter)
+Fork the project to your repositories.
+[About Forking Github](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 
 Install dependencies
- 
 ```zsh
 yarn
 ```
