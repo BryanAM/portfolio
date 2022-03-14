@@ -15,7 +15,7 @@ Get to coding faster with my flavor 🍦 and structure  🏗️ of [react](https
 - [File Structure](#file-structure)
 
 # Getting Started
-Clone the project to your local machine
+Fork the project to your local machine
 ```zsh
 git fork https://github.com/BryanAM/react-starter.git
 ```
