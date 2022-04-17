@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './App.scss';
 import i18n from './i18next';
 import { Card } from './components/index';
+import { useTheme } from './contexts/themeContext';
 
 function App() {
   const [t] = useTranslation();
-  const [theme, setTheme] = useState('theme');
+  const { theme, setTheme } = useTheme();
 
   const changeLng = () => {
     const lng = i18n.language === 'en' ? 'jp' : 'en';
