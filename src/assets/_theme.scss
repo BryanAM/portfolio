@@ -4,16 +4,4 @@
   // easy way to get around name-space?
   --app-bg-color: #{$AppBgColor};
   --app-text-color: #{$TextColor};
-
-
-  // Button
-  --button-bg-color: #{$ButtonBGColor};
-  --button-bg-color-hover: #{$ButtonBGColorHover};
-  --button-border-color: #{$ButtonBorderColor};
-  --button-text-color: #{$ButtonTextColor};
-
-  // Card
-  --card-border-color: #{$CardBorderColor};
-  --card-box-shadow: #{$CardBoxShadow};
-  --card-box-shadow-hover: #{$CardBoxShadowHover};
 }
