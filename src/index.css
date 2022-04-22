@@ -10,13 +10,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  display: flex;
 }
 
 #root {
   height: 100%;
+  width: 100%;
+  display: flex;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+div, p, section, span, nav, header, article, footer {
+  display: flex;
 }

@@ -15,9 +15,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <div>
-        <Landing />
-      </div>
+      <Landing />
     </div>
   );
 }
