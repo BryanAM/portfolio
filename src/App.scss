@@ -10,25 +10,23 @@
   width: 100%
 }
 
-.theme-button {
-  background-color: unset;
-  border: none;
-  font-size:x-large;
-  margin-top: $rhythm * 2;
+// Font Sizes
+.font-sm {
+  font-size: $font-sm;
 }
 
-.change-language-btn {
-  background-color: var(--button-bg-color);
-  border: 1px solid var(--button-border-color);
-  color: var(--button-text-color);
-  padding: $rhythm;
-  border-radius: $rhythm / 2;
-  font-size: 16px;
-  font-weight: bold;
+.font-md {
+  font-size: $font-md;
+}
 
-  &:hover, &:focus {
-    background-color: var(--button-bg-color-hover);
-    transition: background-color 300ms ease-in-out;
-    transition: border 300ms ease-in;
-  }
+.font-lg {
+  font-size: $font-lg;
+}
+
+.font-xl {
+  font-size: $font-xl;
+}
+
+.font-hg {
+  font-size: $font-hg;
 }
