@@ -1,5 +1,10 @@
 {
   "common": {
     "name": "Bryan Aument"
-  }
+  },
+  "landing": {
+    "hero": {
+      "intro": "Software Developer - Building things for the web"
+    }
+}
 }

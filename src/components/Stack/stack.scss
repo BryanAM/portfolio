@@ -1,0 +1,111 @@
+.stack {
+  display: flex;
+  > * {
+    margin: 0 var(--stack-spacing)
+  }
+};
+
+// flex direction
+.row { 
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse
+}
+
+// flex wrap
+.nowrap { 
+  flex-wrap: nowrap;
+}
+
+.wrap { 
+  flex-wrap: wrap;
+}
+.wrap-reverse { 
+  flex-wrap: wrap-reverse;
+}
+
+// CONTAINER STYLES
+// Justify Content 
+// How items are distributed along main axis "free space"
+.j-flex-start {
+  justify-content: flex-start;
+}
+
+.j-flex-end {
+  justify-content: flex-end;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-space-between {
+  justify-content: space-between;
+}
+
+.j-space-around {
+  justify-content: space-around;
+}
+
+.j-space-evenly {
+  justify-content: space-evenly;
+}
+
+// Align Items
+// How flex items are aligned cross axis
+.a-stretch {
+  align-items: stretch;
+}
+
+.a-flex-start {
+  align-items: flex-start;
+}
+
+.a-flex-end {
+  align-items: flex-end;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.a-baseline {
+  align-items: baseline;
+}
+
+// Align Content
+// Defines how extra space is distrubuted in cross axis
+// Typically multi-line
+.c-normal {
+  align-content: normal;
+}
+
+.c-flex-start {
+  align-content: flex-start;
+}
+
+.c-flex-end {
+  align-content: flex-end;
+}
+
+.c-center {
+  align-content: center;
+}
+
+.c-space-between {
+  align-content: space-between;
+}
+
+.c-space-around {
+  align-content: space-around;
+}
