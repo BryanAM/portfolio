@@ -1,7 +1,10 @@
 @use 'variables' as * ;
 
 .theme-dark {
-  // easy way to get around name-space?
+  // App Text Color Theming
   --app-bg-color: #{$DarkAppBgColor};
-  --app-text-color: #{$DarkTextColor};
+  --app-text-color: #{$DarkAppTextColor};
+  --app-text-color-secondary: #{$DarkAppTextColorSecondary};
+  --app-text-color-accent: #{$DarkAppTextColorAccent};
+
 }
