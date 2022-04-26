@@ -1,9 +1,17 @@
 @use 'variables' as * ;
 
 .theme {
-  // App Text Color Theming
+
+  // App Primary Colors
+  --app-accent-color: #{$AppAccentColor};
   --app-bg-color: #{$AppBgColor};
+
+  // App Text Color Theming
   --app-text-color: #{$AppTextColor};
   --app-text-color-secondary: #{$AppTextColorSecondary};
   --app-text-color-accent: #{$AppTextColorAccent};
+
+  // App Link Color Theming
+  --app-link-color: #{$AppLinkColor};
+  --app-link-border-color: #{$AppLinkBorderColor};
 }

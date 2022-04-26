@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import './App.scss';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
 import { useTheme } from './contexts/themeContext';
 import Landing from './views/Landing/Landing';
+import { Menu } from './components/index';
 
 function App() {
   const { theme } = useTheme();
@@ -15,7 +21,12 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <Landing />
+      <BrowserRouter>
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

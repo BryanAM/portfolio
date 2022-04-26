@@ -7,5 +7,12 @@
     "hero": {
       "intro": "I'm a software engineer and I build user focused web tools and applications. My current focus is on bringing theming and internationalization to an eclectic group of projects."
     }
+  },
+  "menu": {
+    "code": "Code",
+    "home": "Home",
+    "posts": "Posts",
+    "projects": "Projects",
+    "resume": "Resume"
   }
 }

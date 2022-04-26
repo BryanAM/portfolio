@@ -4,16 +4,31 @@ $rhythm: 8px;
 
 // Regular Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
-// App
+// App Common
 $AppBgColor: $off-white;
+$AppAccentColor: $florence-500;
+
+// App Text
 $AppTextColor: $independence-blue-900;
-$AppTextColorAccent: $florence-500;
+$AppTextColorAccent: $florence-700;
 $AppTextColorSecondary: $independence-blue-700;
+
+// Links
+$AppLinkColor: $independence-blue-900;
+$AppLinkBorderColor: $florence-500;
 
 // Dark Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
-// App
+// App Common
 $DarkAppBgColor: $black;
+$DarkAppAccentColor: $florence-200;
+
+// Dark App
 $DarkAppTextColor: $independence-blue-100;
 $DarkAppTextColorAccent: $florence-200;
 $DarkAppTextColorSecondary: $independence-blue-400;
+
+
+// Dark Links
+$DarkAppLinkColor: $independence-blue-100;
+$DarkAppLinkBorderColor: $florence-100;

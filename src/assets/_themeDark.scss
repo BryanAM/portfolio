@@ -1,10 +1,17 @@
 @use 'variables' as * ;
 
 .theme-dark {
-  // App Text Color Theming
+
+  // App Primary Colors 
+  --app-accent-color: #{$DarkAppAccentColor};
   --app-bg-color: #{$DarkAppBgColor};
+
+  // App Text Color Theming
   --app-text-color: #{$DarkAppTextColor};
   --app-text-color-secondary: #{$DarkAppTextColorSecondary};
   --app-text-color-accent: #{$DarkAppTextColorAccent};
 
+  // App Link Color Theming
+  --app-link-color: #{$DarkAppLinkColor};
+  --app-link-border-color: #{$DarkAppLinkBorderColor};
 }
