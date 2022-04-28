@@ -10,7 +10,7 @@ $AppAccentColor: $florence-500;
 
 // App Text
 $AppTextColor: $independence-blue-900;
-$AppTextColorAccent: $florence-700;
+$AppTextColorAccent: $AppAccentColor;
 $AppTextColorSecondary: $independence-blue-700;
 
 // Links
@@ -20,12 +20,12 @@ $AppLinkBorderColor: $florence-500;
 // Dark Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
 // App Common
-$DarkAppBgColor: $black;
-$DarkAppAccentColor: $florence-200;
+$DarkAppBgColor: $purple-navy-900;
+$DarkAppAccentColor: $paradise-600;
 
 // Dark App
 $DarkAppTextColor: $independence-blue-100;
-$DarkAppTextColorAccent: $florence-200;
+$DarkAppTextColorAccent: $DarkAppAccentColor;
 $DarkAppTextColorSecondary: $independence-blue-400;
 
 
