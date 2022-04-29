@@ -5,6 +5,12 @@
   "landing": {
     "hero": {
       "intro": "Software Developer - Building things for the web"
+    },
+    "menu": {
+      "code": "Code",
+      "posts": "Posts",
+      "projects": "Projects",
+      "resume": "Resume"
     }
-}
+  }
 }
