@@ -27,7 +27,12 @@
 }
 
 .menu-mobile-button {
-
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--app-accent-color);
+  width: 48px;
+  height: 48px;
 }
 
 .menu-mobile-wrapper {
@@ -49,7 +54,13 @@
 
   .menu-mobile-stack {
     position: absolute;
-    bottom: 25%;
+    bottom: 21%;
     right: 50%;
+
+    .menu-mobile-button {
+      align-self: flex-end;
+      margin-right: 16px;
+      background-color: white;
+    }
   }
 }

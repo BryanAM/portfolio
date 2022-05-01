@@ -25,10 +25,10 @@ function Menu() {
       <NavLink to="/"><MeIcon className="menu-icon" /></NavLink>
       {mobile ? (
         <>
-          <button className="menu-mobile-button" onClick={() => setMenuOpen('open')} type="button">Open</button>
+          <button className="menu-mobile-button" onClick={() => setMenuOpen('open')} type="button">🏠</button>
           <div className={`menu-mobile-wrapper ${menuOpen}`}>
             <Stack className="menu-mobile-stack" spacing={6} flexDirection="column">
-              <button className="menu-mobile-button" onClick={() => setMenuOpen('close')} type="button">Close</button>
+              <button className="menu-mobile-button" onClick={() => setMenuOpen('close')} type="button">🏠</button>
               <NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink>
               <NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink>
               <NavLink to="/code" className="font-size-400">{t('menu.code')}</NavLink>
