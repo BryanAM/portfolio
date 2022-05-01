@@ -2,7 +2,7 @@
 
 .menu {
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 74px;
 }
@@ -23,5 +23,33 @@
     rect {
       fill: var(--app-favicon-hover-color)
     }
+  }
+}
+
+.menu-mobile-button {
+
+}
+
+.menu-mobile-wrapper {
+  position: absolute;
+  transform: translate(50%,-50%);
+  right: 0;
+  top: 0;
+  background-color: var(--menu-mobile-bg-color);
+  border-radius: 50%;
+  height: 0;
+  width: 0;
+
+  &.open {
+    width: 900px;
+    height: 900px;
+  }
+
+  
+
+  .menu-mobile-stack {
+    position: absolute;
+    bottom: 25%;
+    right: 50%;
   }
 }

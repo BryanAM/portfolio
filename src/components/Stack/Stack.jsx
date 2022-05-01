@@ -4,6 +4,7 @@ import './stack.scss';
 
 function Stack({
   children,
+  className,
   flexDirection,
   flexWrap,
   justifyContent,
@@ -25,7 +26,8 @@ function Stack({
       ${`a-${alignItems}`}
       ${`c-${alignContent}`}
       ${flexDirection}
-      ${flexWrap}`}
+      ${flexWrap}
+      ${className}`}
     >
       {children}
     </div>
@@ -38,6 +40,7 @@ Stack.defaultProps = {
   flexDirection: 'row',
   flexWrap: 'nowrap',
   justifyContent: 'flex-start',
+  className: '',
   spacing: 0,
 };
 
@@ -47,6 +50,7 @@ Stack.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
   flexDirection: PropTypes.string,
   flexWrap: PropTypes.string,
   justifyContent: PropTypes.string,
