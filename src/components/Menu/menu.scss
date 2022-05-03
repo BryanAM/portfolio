@@ -5,6 +5,12 @@
   justify-content: flex-end;
   align-items: center;
   height: 74px;
+  z-index: 1;
+
+  // blur all siblings
+  &.open ~ * {
+    filter: blur(8px);
+  }
 }
 
 .menu-icon {
@@ -31,37 +37,52 @@
   border: none;
   border-radius: 50%;
   background-color: var(--app-accent-color);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.42);
   width: 48px;
   height: 48px;
+  position: absolute;
+  z-index: 2;
+
+  &.open {
+    background-color: var(--menu-mobile-accent-color);
+  }
 }
 
 .menu-mobile-wrapper {
   position: absolute;
-  opacity: 0.95;
+  
   transform: translate(50%,-50%);
   right: 0;
   top: 0;
-  background-color: var(--menu-mobile-bg-color);
-  border-radius: 50%;
   height: 0;
   width: 0;
 
+  &::after {
+    content: '';
+    opacity: 0.7;
+    background-color: var(--menu-mobile-bg-color);
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  
+  // override a:hover links
+  a {
+    color: var(--menu-mobile-link-text-color);
+    &:hover {
+      border-bottom-color: var(--menu-mobile-accent-color);
+    }
+  }
+ 
   &.open {
     width: 900px;
     height: 900px;
   }
 
-  
-
   .menu-mobile-stack {
     position: absolute;
     bottom: 21%;
     right: 50%;
-
-    .menu-mobile-button {
-      align-self: flex-end;
-      margin-right: 16px;
-      background-color: white;
-    }
   }
 }

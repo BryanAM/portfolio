@@ -18,8 +18,10 @@ $AppTextColorSecondary: $independence-blue-700;
 $AppLinkColor: $independence-blue-900;
 $AppLinkBorderColor: $florence-500;
 
-// Menu 
+// Menu
+$MenuMobileAccentColor: $white; 
 $MenuMobileBGColor: $AppAccentColor;
+$MenuMobileLinkTextColor: $independence-blue-900;
 
 // Dark Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
@@ -39,4 +41,6 @@ $DarkAppLinkColor: $independence-blue-100;
 $DarkAppLinkBorderColor: $florence-100;
 
 // Dark Menu
+$DarkMenuMobileAccentColor: $white; 
 $DarkMenuMobileBGColor: $DarkAppAccentColor;
+$DarkMenuMobileLinkTextColor: $white;
