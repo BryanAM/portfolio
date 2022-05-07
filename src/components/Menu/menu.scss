@@ -40,17 +40,35 @@
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.42);
   width: 48px;
   height: 48px;
+  padding: 0;
   position: absolute;
   z-index: 2;
 
   &.open {
-    background-color: var(--menu-mobile-accent-color);
+    visibility: hidden;
+  }
+
+}
+
+.menu-mobile-button-close {
+  visibility: hidden;
+  &.open {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--app-accent-color);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.42);
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    bottom: variables.$rhythm * 4;
+    visibility: visible;
   }
 }
 
 .menu-mobile-wrapper {
   position: absolute;
-  
   transform: translate(50%,-50%);
   right: 0;
   top: 0;
