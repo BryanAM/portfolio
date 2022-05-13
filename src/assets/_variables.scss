@@ -16,7 +16,6 @@ $AppTextColorSecondary: $independence-blue-700;
 
 // Links
 $AppLinkColor: $independence-blue-900;
-$AppLinkBorderColor: $florence-500;
 
 // Menu
 $MenuMobileAccentColor: $white; 
@@ -31,14 +30,13 @@ $DarkAppAccentColor: $lavender-600;
 $DarkAppFaviconHoverColor: $lavender-500;
 
 // Dark App
-$DarkAppTextColor: $independence-blue-100;
+$DarkAppTextColor: $iris-100;
 $DarkAppTextColorAccent: $DarkAppAccentColor;
-$DarkAppTextColorSecondary: $independence-blue-400;
+$DarkAppTextColorSecondary: $iris-200;
 
 
 // Dark Links
-$DarkAppLinkColor: $independence-blue-100;
-$DarkAppLinkBorderColor: $florence-100;
+$DarkAppLinkColor: $DarkAppTextColor;
 
 // Dark Menu
 $DarkMenuMobileAccentColor: $white; 
