@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Stack from '../Stack/Stack';
 import { ReactComponent as MeIcon } from '../../assets/pictograms/me.svg';
 import { ReactComponent as MenuIcon } from '../../assets/pictograms/menu.svg';
+import { ReactComponent as CloseIcon } from '../../assets/pictograms/close-square.svg';
 import './menu.scss';
 
 function Menu() {
@@ -39,7 +40,9 @@ function Menu() {
               <NavLink to="/resume" className="font-size-400">{t('menu.resume')}</NavLink>
             </Stack>
           </div>
-          <button className={`menu-mobile-button-close ${menuOpen ? 'open' : ''}`} type="button" onClick={() => setMenuOpen(false)}>X</button>
+          <button className={`menu-mobile-button-close ${menuOpen ? 'open' : ''}`} type="button" onClick={() => setMenuOpen(false)}>
+            <CloseIcon />
+          </button>
         </>
       ) : (
         <Stack spacing={6}>

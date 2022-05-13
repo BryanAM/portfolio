@@ -227,5 +227,6 @@ Finally, the manor in which all themes, styles, and variables are imported to th
 - [i18next](https://www.i18next.com)
 - [i18next-browser-languagedetector](https://react.i18next.com/legacy-v9/step-by-step-guide#c-auto-detect-the-user-language)
 - [sass](https://sass-lang.com/)
+- [icons](http://iconsax.io)
 
 
