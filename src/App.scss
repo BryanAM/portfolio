@@ -91,3 +91,16 @@ a {
     color: var(--app-text-color);
   }
 }
+
+.text-button {
+  font-size: $font-size-100;
+  background: none;
+  color: var(--button-text-button-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  
+}

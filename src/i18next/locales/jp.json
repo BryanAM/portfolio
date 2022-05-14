@@ -1,16 +1,17 @@
 {
   "common": {
-    "name": "Bryan Aument"
+    "name": "Bryan Aument",
+    "title": "ウェブ開発者"
   },
   "landing": {
     "hero": {
-      "intro": "Software Developer - Building things for the web"
-    },
-    "menu": {
-      "code": "Code",
-      "posts": "Posts",
-      "projects": "Projects",
-      "resume": "Resume"
+      "intro": "ユーザー中心のウェブアプリとツールを実行するウェブ開発者です。現在はウェブアプリのテーマと言語や国際化を広まる興味を持っています。"
     }
+  },
+  "menu": {
+    "code": "コード",
+    "posts": "登板",
+    "projects": "自己プロジェツト",
+    "resume": "履歴書"
   }
 }

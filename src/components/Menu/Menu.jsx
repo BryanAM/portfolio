@@ -11,7 +11,7 @@ import { useTheme } from '../../contexts/themeContext';
 import './menu.scss';
 
 function Menu() {
-  const [t] = useTranslation();
+  const [t, i18next] = useTranslation();
   const mobileMenuRef = useRef(null);
   const { theme, setTheme } = useTheme();
   const [mobile, setMobile] = useState(false);
@@ -52,14 +52,18 @@ function Menu() {
           </button>
           {/* Ref to close on outside click */}
           <div ref={mobileMenuRef} className={`menu-mobile-wrapper ${menuOpen ? 'open' : ''}`}>
-            <Stack className="menu-mobile-stack" spacing={6} flexDirection="column">
+            <Stack className="menu-mobile-stack" spacing={8} verticalSpacing={2} flexDirection="column">
               <NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink>
               <NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink>
               <NavLink to="/code" className="font-size-400">{t('menu.code')}</NavLink>
               <NavLink to="/resume" className="font-size-400">{t('menu.resume')}</NavLink>
-              <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
-                {theme === 'theme' ? <SunIcon className="menu-mobile-theme-button" /> : <MoonIcon />}
-              </button>
+              <Stack>
+                <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
+                  {theme === 'theme' ? <SunIcon className="menu-mobile-theme-button" /> : <MoonIcon />}
+                </button>
+                <button className="text-button" type="button" onClick={() => i18next.changeLanguage('en')}>EN</button>
+                <button className="text-button" type="button" onClick={() => i18next.changeLanguage('jp')}>JP</button>
+              </Stack>
             </Stack>
           </div>
           <button
@@ -79,6 +83,8 @@ function Menu() {
           <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
             {theme === 'theme' ? <SunIcon /> : <MoonIcon />}
           </button>
+          <button className="text-button" type="button" onClick={() => i18next.changeLanguage('en')}>EN</button>
+          <button className="text-button" type="button" onClick={() => i18next.changeLanguage('jp')}>JP</button>
         </Stack>
       )}
     </nav>

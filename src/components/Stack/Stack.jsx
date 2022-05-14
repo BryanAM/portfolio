@@ -11,11 +11,15 @@ function Stack({
   alignItems,
   alignContent,
   spacing,
+  verticalSpacing,
 }) {
   const stackRef = useRef(null);
   useEffect(() => {
     if (spacing) {
       stackRef.current.style.setProperty('--stack-spacing', `${spacing}px`);
+    }
+    if (verticalSpacing) {
+      stackRef.current.style.setProperty('--stack-spacing-vertical', `${verticalSpacing}px`);
     }
   }, []);
   return (
@@ -42,6 +46,7 @@ Stack.defaultProps = {
   justifyContent: 'flex-start',
   className: '',
   spacing: 0,
+  verticalSpacing: 0,
 };
 
 Stack.propTypes = {
@@ -55,5 +60,6 @@ Stack.propTypes = {
   flexWrap: PropTypes.string,
   justifyContent: PropTypes.string,
   spacing: PropTypes.number,
+  verticalSpacing: PropTypes.number,
 };
 export default Stack;
