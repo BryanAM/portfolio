@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import Stack from '../Stack/Stack';
@@ -12,6 +12,7 @@ import './menu.scss';
 
 function Menu() {
   const [t] = useTranslation();
+  const mobileMenuRef = useRef(null);
   const { theme, setTheme } = useTheme();
   const [mobile, setMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,12 +25,20 @@ function Menu() {
     }
   };
 
-  useLayoutEffect(() => {
+  const closeOpenMenus = (e) => {
+    if (menuOpen && !mobileMenuRef.current.contains(e.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
     window.addEventListener('resize', handleResize);
+    document.addEventListener('mousedown', closeOpenMenus);
     handleResize();
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      document.removeEventListener('mousedown', closeOpenMenus);
     };
   }, [menuOpen]);
 
@@ -41,7 +50,8 @@ function Menu() {
           <button className={`floating-action-button menu-mobile-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(true)} type="button">
             <MenuIcon />
           </button>
-          <div className={`menu-mobile-wrapper ${menuOpen ? 'open' : ''}`}>
+          {/* Ref to close on outside click */}
+          <div ref={mobileMenuRef} className={`menu-mobile-wrapper ${menuOpen ? 'open' : ''}`}>
             <Stack className="menu-mobile-stack" spacing={6} flexDirection="column">
               <NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink>
               <NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink>
@@ -52,7 +62,11 @@ function Menu() {
               </button>
             </Stack>
           </div>
-          <button className={`floating-action-button menu-mobile-button-close ${menuOpen ? 'open' : ''}`} type="button" onClick={() => setMenuOpen(false)}>
+          <button
+            className={`floating-action-button menu-mobile-button-close ${menuOpen ? 'open' : ''}`}
+            type="button"
+            onClick={() => setMenuOpen(false)}
+          >
             <CloseCross />
           </button>
         </>
