@@ -100,5 +100,8 @@
     position: absolute;
     bottom: 21%;
     right: 50%;
+    .menu-mobile-theme-button {
+      color: var(--menu-mobile-accent-color);
+    }
   }
 }

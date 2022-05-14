@@ -5,6 +5,8 @@ import Stack from '../Stack/Stack';
 import { ReactComponent as MeIcon } from '../../assets/pictograms/me.svg';
 import { ReactComponent as MenuIcon } from '../../assets/pictograms/menu.svg';
 import { ReactComponent as CloseCross } from '../../assets/pictograms/close-cross.svg';
+import { ReactComponent as MoonIcon } from '../../assets/pictograms/moon.svg';
+import { ReactComponent as SunIcon } from '../../assets/pictograms/sun.svg';
 import { useTheme } from '../../contexts/themeContext';
 import './menu.scss';
 
@@ -45,7 +47,9 @@ function Menu() {
               <NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink>
               <NavLink to="/code" className="font-size-400">{t('menu.code')}</NavLink>
               <NavLink to="/resume" className="font-size-400">{t('menu.resume')}</NavLink>
-              <button type="button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>Theme</button>
+              <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
+                {theme === 'theme' ? <SunIcon className="menu-mobile-theme-button" /> : <MoonIcon />}
+              </button>
             </Stack>
           </div>
           <button className={`floating-action-button menu-mobile-button-close ${menuOpen ? 'open' : ''}`} type="button" onClick={() => setMenuOpen(false)}>
@@ -58,6 +62,9 @@ function Menu() {
           <NavLink to="/projects">{t('menu.projects')}</NavLink>
           <NavLink to="/code">{t('menu.code')}</NavLink>
           <NavLink to="/resume">{t('menu.resume')}</NavLink>
+          <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
+            {theme === 'theme' ? <SunIcon /> : <MoonIcon />}
+          </button>
         </Stack>
       )}
     </nav>
