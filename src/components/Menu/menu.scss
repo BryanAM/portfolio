@@ -33,15 +33,6 @@
 }
 
 .menu-mobile-button {
-  background: none;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--app-accent-color);
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.42);
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  padding: 0;
   position: absolute;
   z-index: 2;
 
@@ -54,13 +45,12 @@
 .menu-mobile-button-close {
   cursor: pointer;
   visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &.open {
-    border: none;
-    background: none;
-    width: 48px;
-    height: 48px;
     position: absolute;
-    padding: 0;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -68,12 +58,10 @@
     text-align: center;
     bottom: variables.$rhythm * 4;
     visibility: visible;
+  }
 
-    svg {
-      color: var(--app-accent-color);
-      width: 48px;
-      height: auto;
-    }
+  svg {
+    fill: white;
   }
 }
 

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Stack from '../Stack/Stack';
 import { ReactComponent as MeIcon } from '../../assets/pictograms/me.svg';
 import { ReactComponent as MenuIcon } from '../../assets/pictograms/menu.svg';
-import { ReactComponent as CloseIcon } from '../../assets/pictograms/close-square.svg';
+import { ReactComponent as CloseCross } from '../../assets/pictograms/close-cross.svg';
 import './menu.scss';
 
 function Menu() {
@@ -29,7 +29,7 @@ function Menu() {
       <NavLink to="/"><MeIcon className="menu-icon" /></NavLink>
       {mobile ? (
         <>
-          <button className={`menu-mobile-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(true)} type="button">
+          <button className={`floating-action-button menu-mobile-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(true)} type="button">
             <MenuIcon />
           </button>
           <div className={`menu-mobile-wrapper ${menuOpen ? 'open' : ''}`}>
@@ -40,8 +40,8 @@ function Menu() {
               <NavLink to="/resume" className="font-size-400">{t('menu.resume')}</NavLink>
             </Stack>
           </div>
-          <button className={`menu-mobile-button-close ${menuOpen ? 'open' : ''}`} type="button" onClick={() => setMenuOpen(false)}>
-            <CloseIcon />
+          <button className={`floating-action-button menu-mobile-button-close ${menuOpen ? 'open' : ''}`} type="button" onClick={() => setMenuOpen(false)}>
+            <CloseCross />
           </button>
         </>
       ) : (
