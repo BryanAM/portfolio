@@ -13,7 +13,11 @@ function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleResize = () => {
-    setMobile(window.innerWidth <= 768);
+    const windowSize = window.innerWidth;
+    setMobile(windowSize <= 768);
+    if (windowSize > 768) {
+      setMenuOpen(false);
+    }
   };
 
   useLayoutEffect(() => {
@@ -24,6 +28,7 @@ function Menu() {
       window.removeEventListener('resize', handleResize);
     };
   }, [menuOpen]);
+
   return (
     <nav className={`menu ${menuOpen ? 'open' : ''}`}>
       <NavLink to="/"><MeIcon className="menu-icon" /></NavLink>
