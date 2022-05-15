@@ -23,9 +23,11 @@ function App() {
     <div className={`App ${theme}`}>
       <BrowserRouter>
         <Menu />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-        </Routes>
+        <div className="app-container">
+          <Routes>
+            <Route path="/" element={<Landing />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
