@@ -2,7 +2,6 @@
 
 .App {
   color: var(--app-text-color);
-  height: 100%;
   background: var(--app-bg-color);
   display: flex;
   flex-direction: column;
@@ -14,7 +13,7 @@
 }
 
 .app-container {
-  color: var(--app-text-color);
+  // color: var(--app-text-color);
   height: 100%;
   background: var(--app-bg-color);
   display: flex;
