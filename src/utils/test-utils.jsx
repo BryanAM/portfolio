@@ -1,5 +1,7 @@
+/* eslint-disable max-len */
 import React from 'react';
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
+import TestRenderer from 'react-test-renderer';
 import { I18nextProvider } from 'react-i18next';
 import PropTypes from 'prop-types';
 import i18n from '../i18next/index';
@@ -16,7 +18,7 @@ AllProviders.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-const customRender = (ui, options) => render(ui, { wrapper: AllProviders, ...options });
+const customRender = (ui, options) => TestRenderer.create(ui, { wrapper: AllProviders, ...options });
 
 // re-export everything
 export * from '@testing-library/react';
