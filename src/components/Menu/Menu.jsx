@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import Stack from '../Stack/Stack';
@@ -23,7 +23,7 @@ function Menu() {
     }
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener('resize', handleResize);
     handleResize();
 

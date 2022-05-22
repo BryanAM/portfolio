@@ -1,7 +1,50 @@
 @use '../../../assets/variables';
 
+
+.menu {
+  .menu-mobile-stack {
+    position: absolute;
+    visibility: hidden;
+    left: 16px;
+    top: 64px;
+    .menu-mobile-theme-button {
+      color: var(--menu-mobile-accent-color);
+    }
+
+    .text-button {
+      color: var(--menu-mobile-accent-color);
+    }
+
+    // override a:hover links
+    a {
+      margin: 0;
+      color: var(--menu-mobile-link-text-color);
+      &:hover {
+        border-bottom-color: var(--menu-mobile-accent-color);
+      }
+    }
+
+    &.open {
+      visibility: visible;
+
+      .stack {
+        margin: 0;
+      }
+    }
+  }
+}
+
 .menu-mobile-button {
+  cursor: pointer;
   position: absolute;
+  border: none;
+  background-color: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  height: 48px;
+  width: 48px;
+  background-color: transparent;
   z-index: 2;
 
   &.open {
@@ -34,12 +77,9 @@
 }
 
 .menu-mobile-wrapper {
-  position: absolute;
-  transform: translate(50%,-50%);
-  right: 0;
-  top: 0;
-  height: 0;
-  width: 0;
+  position: absolute; 
+  overflow: hidden;
+  right: 16px;
 
   &::after {
     content: '';
@@ -49,31 +89,5 @@
     width: 100%;
     height: auto;
     z-index: -1;
-  }
-  
-  // override a:hover links
-  a {
-    color: var(--menu-mobile-link-text-color);
-    &:hover {
-      border-bottom-color: var(--menu-mobile-accent-color);
-    }
-  }
- 
-  &.open {
-    width: 900px;
-    height: 900px;
-  }
-
-  .menu-mobile-stack {
-    position: absolute;
-    bottom: 21%;
-    right: 50%;
-    .menu-mobile-theme-button {
-      color: var(--menu-mobile-accent-color);
-    }
-
-    .text-button {
-      color: var(--menu-mobile-accent-color);
-    }
   }
 }
