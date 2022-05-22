@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable no-mixed-operators */
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -20,8 +18,8 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
   const { theme, setTheme } = useTheme();
 
   const closeOpenMenus = (e) => {
-    console.log(e.target);
-    if (menuOpen && !mobileMenuRef.current.contains(e.target) && !mobileStackRef.current.contains(e.target)) {
+    if (menuOpen && !mobileMenuRef.current.contains(e.target)
+    && !mobileStackRef.current.contains(e.target)) {
       setMenuOpen(false);
     }
   };
@@ -50,6 +48,15 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
       },
       width: 48,
       height: 48,
+    },
+  };
+
+  const mobileCloseVariants = {
+    open: {
+      bottom: 32,
+    },
+    close: {
+      bottom: -64,
     },
   };
 
@@ -82,13 +89,16 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
           </Stack>
         </Stack>
       </div>
-      <button
+      <motion.button
+        variants={mobileCloseVariants}
+        animate={menuOpen ? 'open' : 'close'}
+        initial="close"
         className={`floating-action-button menu-mobile-button-close ${menuOpen ? 'open' : ''}`}
         type="button"
         onClick={() => setMenuOpen(false)}
       >
         <CloseCross />
-      </button>
+      </motion.button>
     </>
   );
 }
