@@ -20,8 +20,25 @@
     a {
       margin: 0;
       color: var(--menu-mobile-link-text-color);
-      &:hover {
-        border-bottom-color: var(--menu-mobile-accent-color);
+      display: block;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: variables.$rhythm / 2;
+        background-color: var(--menu-mobile-accent-color);
+        opacity: 0;
+        transition: opacity 300ms, transform 300ms;
+        transform: translate3d(-100%, 0, 0);
+      }
+      &:hover::after {
+        opacity: 1;
+        transform: translate3d(0,0,0);
       }
     }
 
