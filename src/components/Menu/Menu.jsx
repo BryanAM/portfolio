@@ -39,10 +39,10 @@ function Menu() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       ) : (
         <Stack spacing={6}>
-          <NavLink to="/posts">{t('menu.posts')}</NavLink>
-          <NavLink to="/projects">{t('menu.projects')}</NavLink>
-          <NavLink to="/code">{t('menu.code')}</NavLink>
-          <NavLink to="/resume">{t('menu.resume')}</NavLink>
+          <NavLink className="menu-nav-link" to="/posts">{t('menu.posts')}</NavLink>
+          <NavLink className="menu-nav-link" to="/projects">{t('menu.projects')}</NavLink>
+          <NavLink className="menu-nav-link" to="/code">{t('menu.code')}</NavLink>
+          <NavLink className="menu-nav-link" to="/resume">{t('menu.resume')}</NavLink>
           <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
             {theme === 'theme' ? <SunIcon /> : <MoonIcon />}
           </button>
