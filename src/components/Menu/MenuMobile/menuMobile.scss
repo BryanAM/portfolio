@@ -4,9 +4,10 @@
 .menu {
   .menu-mobile-stack {
     position: absolute;
-    visibility: hidden;
     left: 16px;
     top: 64px;
+    z-index: 2;
+    
     .menu-mobile-theme-button {
       color: var(--menu-mobile-accent-color);
     }
@@ -78,6 +79,7 @@
   position: absolute; 
   overflow: hidden;
   right: 16px;
+  z-index: 1;
 
   &::after {
     content: '';

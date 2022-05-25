@@ -43,11 +43,18 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
     close: {
       transition: {
         type: 'tween',
+        delay: 0.5,
         duration: 0.1,
         bounce: 0,
       },
       width: 48,
       height: 48,
+    },
+    hoverOpen: {
+      scale: 1.1,
+    },
+    hoverClose: {
+      scale: 1,
     },
   };
 
@@ -60,37 +67,74 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
     },
   };
 
+  const navLinkVariants = {
+    slideIn: (i) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: i * 0.2,
+      },
+    }),
+    slideOut: (i) => ({
+      opacity: 0,
+      x: -200,
+      transition: {
+        delay: i * 0.05,
+      },
+    }),
+    hideMenu: {
+      opacity: 0,
+      x: -200,
+    },
+  };
+
   return (
     <>
       {/* Ref to close on outside click */}
       <motion.div
+        whileHover={`${menuOpen ? 'hoverClose' : 'hoverOpen'}`}
         initial={false}
         animate={menuOpen ? 'open' : 'close'}
         variants={menuVariants}
         ref={mobileMenuRef}
         className={`menu-mobile-wrapper ${menuOpen ? 'open' : ''}`}
       >
-        <button className={`menu-mobile-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(true)} type="button">
+        <button
+          className={`menu-mobile-button ${menuOpen ? 'open' : ''}`}
+          onClick={() => setMenuOpen(true)}
+          type="button"
+        >
           <MenuIcon />
         </button>
       </motion.div>
       <div ref={mobileStackRef}>
         <Stack className={`menu-mobile-stack ${menuOpen ? 'open' : ''}`} spacing={8} verticalSpacing={2} flexDirection="column">
-          <NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink>
-          <NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink>
-          <NavLink to="/code" className="font-size-400">{t('menu.code')}</NavLink>
-          <NavLink to="/resume" className="font-size-400">{t('menu.resume')}</NavLink>
+          <motion.span custom={1} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink></motion.span>
+          <motion.span custom={2} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink></motion.span>
+          <motion.span custom={3} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/code" className="font-size-400">{t('menu.code')}</NavLink></motion.span>
+          <motion.span custom={4} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/resume" className="font-size-400">{t('menu.resume')}</NavLink></motion.span>
           <Stack>
-            <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
+            <motion.button
+              type="button"
+              className="icon-button"
+              custom={5}
+              initial="hideMenu"
+              animate={`${menuOpen ? 'slideIn' : 'slideOut'}`}
+              variants={navLinkVariants}
+              onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}
+            >
               {theme === 'theme' ? <SunIcon className="menu-mobile-theme-button" /> : <MoonIcon />}
-            </button>
-            <button className="text-button" type="button" onClick={() => i18next.changeLanguage('en')}>EN</button>
-            <button className="text-button" type="button" onClick={() => i18next.changeLanguage('jp')}>JP</button>
+            </motion.button>
+            <motion.button custom={6} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} className="text-button" type="button" onClick={() => i18next.changeLanguage('en')}>EN</motion.button>
+            <motion.button custom={7} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} className="text-button" type="button" onClick={() => i18next.changeLanguage('jp')}>JP</motion.button>
           </Stack>
         </Stack>
       </div>
       <motion.button
         variants={mobileCloseVariants}
+        whileHover={{
+          scale: 1.1,
+        }}
         animate={menuOpen ? 'open' : 'close'}
         initial="close"
         className={`floating-action-button menu-mobile-button-close ${menuOpen ? 'open' : ''}`}

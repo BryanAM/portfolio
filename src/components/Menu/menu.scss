@@ -6,10 +6,11 @@
   align-items: center;
   height: 74px;
   z-index: 1;
-
+  
   // blur all siblings
-  &.open ~ * {
-    filter: blur(8px);
+  &.open ~ .app-container {
+    filter: blur(6px);
+    transition-duration: 2s;
   }
 }
 
