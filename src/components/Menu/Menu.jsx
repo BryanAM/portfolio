@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Stack from '../Stack/Stack';
 import { ReactComponent as MeIcon } from '../../assets/pictograms/me.svg';
 import { ReactComponent as MoonIcon } from '../../assets/pictograms/moon.svg';
@@ -9,11 +10,10 @@ import { useTheme } from '../../contexts/themeContext';
 import MobileMenu from './MenuMobile/MenuMobile';
 import './menu.scss';
 
-function Menu() {
+function Menu({ menuOpen, setMenuOpen }) {
   const [t, i18next] = useTranslation();
   const { theme, setTheme } = useTheme();
   const [mobile, setMobile] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleResize = () => {
     const windowSize = window.innerWidth;
@@ -53,5 +53,10 @@ function Menu() {
     </nav>
   );
 }
+
+Menu.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.func.isRequired,
+};
 
 export default Menu;
