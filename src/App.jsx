@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import {
   BrowserRouter,
@@ -13,13 +13,6 @@ import { Menu } from './components/index';
 function App() {
   const { theme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const schema = document.querySelector('meta[name="theme-color"]');
-    const style = getComputedStyle(document.body.querySelector('.App'));
-    const headerColor = style.getPropertyValue('--app-bg-color');
-    schema.setAttribute('content', headerColor);
-  }, [theme]);
 
   const appContainerVariants = {
     open: {
@@ -37,7 +30,6 @@ function App() {
       },
     },
   };
-
   return (
     <div className={`App ${theme}`}>
       <BrowserRouter>
