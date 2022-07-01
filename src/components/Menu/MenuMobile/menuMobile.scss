@@ -24,6 +24,10 @@
       position: relative;
       overflow: hidden;
 
+      &.active  {
+        border-bottom-color: var(--mobile-menu-accent-color);
+      }
+
       &::after {
         content: '';
         position: absolute;
