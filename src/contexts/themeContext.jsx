@@ -10,8 +10,20 @@ import PropTypes from 'prop-types';
 const ThemeContext = createContext({});
 
 function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState();
-  // Possibly a problem here????
+  const [theme, setThemeState] = useState();
+
+  // TODO Currently switching header color backwards
+  const setTheme = (value) => {
+    localStorage.setItem('theme', value);
+    setThemeState(value);
+    const schema = document.querySelector('meta[name="theme-color"]');
+    // Get current updated color
+    const style = getComputedStyle(document.body.querySelector('.App'));
+    const headerColor = style.getPropertyValue('--app-bg-color');
+    schema.setAttribute('content', headerColor);
+    console.log('header color', headerColor);
+  };
+
   const themeContextValues = useMemo(() => ({ theme, setTheme }), [theme]);
 
   const getPreferedTheme = () => {
@@ -19,7 +31,7 @@ function ThemeProvider({ children }) {
     const schema = document.querySelector('meta[name="theme-color"]');
     const userThemePreferences = window.matchMedia('(prefers-color-scheme: dark)');
     if (localTheme) {
-      setTheme(localTheme);
+      setThemeState(localTheme);
       const style = getComputedStyle(document.body.querySelector('.App'));
       const headerColor = style.getPropertyValue('--app-bg-color');
       schema.setAttribute('content', headerColor);
