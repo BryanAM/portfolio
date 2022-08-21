@@ -10,6 +10,7 @@
   },
   "menu": {
     "code": "コード",
+    "home": "トップ",
     "posts": "登板",
     "projects": "プロジェツト",
     "resume": "履歴書"

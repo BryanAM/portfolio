@@ -1,52 +1,43 @@
+/* eslint-disable no-unused-vars */
 import React, {
   createContext,
   useState,
   useMemo,
   useContext,
-  useLayoutEffect,
 } from 'react';
 import PropTypes from 'prop-types';
 
 const ThemeContext = createContext({});
 
 function ThemeProvider({ children }) {
-  const [theme, setThemeState] = useState();
-
-  // TODO Currently switching header color backwards
-  const setTheme = (value) => {
-    localStorage.setItem('theme', value);
-    setThemeState(value);
-    const schema = document.querySelector('meta[name="theme-color"]');
-    // Get current updated color
-    const style = getComputedStyle(document.body.querySelector('.App'));
-    const headerColor = style.getPropertyValue('--app-bg-color');
-    schema.setAttribute('content', headerColor);
-    console.log('header color', headerColor);
-  };
-
-  const themeContextValues = useMemo(() => ({ theme, setTheme }), [theme]);
-
-  const getPreferedTheme = () => {
+  function getPreferedTheme() {
     const localTheme = localStorage.getItem('theme');
     const schema = document.querySelector('meta[name="theme-color"]');
     const userThemePreferences = window.matchMedia('(prefers-color-scheme: dark)');
     if (localTheme) {
-      setThemeState(localTheme);
-      const style = getComputedStyle(document.body.querySelector('.App'));
-      const headerColor = style.getPropertyValue('--app-bg-color');
+      const headerColor = localTheme === 'theme' ? '#F8F7FD' : '#000';
       schema.setAttribute('content', headerColor);
-      return;
+      return localTheme;
     }
     const newTheme = userThemePreferences.matches ? 'theme-dark' : 'theme';
     localStorage.setItem('theme', newTheme);
+    const headerColor = newTheme === 'theme' ? '#F8F7FD' : '#000';
+    schema.setAttribute('content', headerColor);
+    return newTheme;
+  }
+
+  const [theme, setThemeState] = useState(getPreferedTheme());
+
+  const setTheme = (value) => {
+    localStorage.setItem('theme', value);
+    setThemeState(value);
+    const schema = document.querySelector('meta[name="theme-color"]');
     const style = getComputedStyle(document.body.querySelector('.App'));
     const headerColor = style.getPropertyValue('--app-bg-color');
     schema.setAttribute('content', headerColor);
   };
 
-  useLayoutEffect(() => {
-    getPreferedTheme();
-  }, []);
+  const themeContextValues = useMemo(() => ({ theme, setTheme }), [theme]);
 
   return (
     <ThemeContext.Provider value={themeContextValues}>

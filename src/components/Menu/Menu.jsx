@@ -39,6 +39,7 @@ function Menu({ menuOpen, setMenuOpen }) {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       ) : (
         <Stack spacing={6}>
+          <NavLink className="menu-nav-link" to="/">{t('menu.home')}</NavLink>
           <NavLink className="menu-nav-link" to="/posts">{t('menu.posts')}</NavLink>
           <NavLink className="menu-nav-link" to="/projects">{t('menu.projects')}</NavLink>
           <NavLink className="menu-nav-link" to="/code">{t('menu.code')}</NavLink>
