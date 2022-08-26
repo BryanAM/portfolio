@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { useTheme } from './contexts/themeContext';
 import Landing from './views/Landing/Landing';
 import { Menu } from './components/index';
+import UnderConstruction from './views/UnderConstruction/UnderConstruction';
 
 function App() {
   const { theme } = useTheme();
@@ -37,6 +38,7 @@ function App() {
         <motion.div variants={appContainerVariants} animate={menuOpen ? 'open' : 'close'} className="app-container">
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/*" element={<UnderConstruction />} />
           </Routes>
         </motion.div>
       </BrowserRouter>

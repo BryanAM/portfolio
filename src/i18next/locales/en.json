@@ -14,5 +14,9 @@
     "posts": "Posts",
     "projects": "Projects",
     "resume": "Resume"
+  },
+  "underConstruction": {
+    "heading": "Under Construction",
+    "description": "Hold tight, I'm working on brining this page to life, cheers!"
   }
 }
