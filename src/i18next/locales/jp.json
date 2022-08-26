@@ -14,5 +14,9 @@
     "posts": "登板",
     "projects": "プロジェツト",
     "resume": "履歴書"
+  },
+  "underConstruction": {
+    "heading": "工事中",
+    "description": "このページは実装されるので、少々お待ち臭いませ！"
   }
 }
