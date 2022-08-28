@@ -8,7 +8,7 @@ import {
 import { motion } from 'framer-motion';
 import { useTheme } from './contexts/themeContext';
 import Landing from './views/Landing/Landing';
-import { Menu } from './components/index';
+import { Menu, SocialPole } from './components/index';
 import UnderConstruction from './views/UnderConstruction/UnderConstruction';
 
 function App() {
@@ -42,6 +42,7 @@ function App() {
           </Routes>
         </motion.div>
       </BrowserRouter>
+      <SocialPole />
     </div>
   );
 }
