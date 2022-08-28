@@ -1,15 +1,31 @@
 @use '../../assets/variables';
 
 .social-pole {
+  align-items: center;
   display: none;
+  flex-direction: column;
+  padding: 0 variables.$rhythm;
 
   &-github-icon {
-    width: 25px;
+    width: 20px;
+    color: var(--app-text-color);
     height: auto;
   }
 
+  &-email-icon {
+    width: 20px;
+  }
+
+  &-mail-button {
+    background: none;
+    color: var(--app-text-color);
+    border: none;
+    cursor: pointer;
+
+  }
+
   &-bar {
-    border-left: 1px solid black;
+    height: 100px;
   }
 }
 
