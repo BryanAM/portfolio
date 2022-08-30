@@ -6,6 +6,10 @@
   flex-direction: column;
   padding: 0 variables.$rhythm;
 
+  a.social-pole-link {
+    border-bottom: none;
+  }
+
   &-github-icon {
     width: 20px;
     color: var(--app-text-color);
@@ -26,6 +30,7 @@
 
   &-bar {
     height: 100px;
+    width: 0;
   }
 }
 
