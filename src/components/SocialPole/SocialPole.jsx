@@ -13,13 +13,13 @@ function SocialPole() {
 
   return (
     <Stack className="social-pole" verticalSpacing={10} flexDirection="column" alignContent="center">
-      <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} href="https://github.com/BryanAM" className="social-pole-link" aria-label="github link" target="_blank" rel="noopener noreferrer">
+      <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} href="https://github.com/BryanAM" className="social-pole-link" aria-label="github link" target="_blank" rel="noopener noreferrer">
         <GithubIcon className="social-pole-github-icon" />
       </motion.a>
-      <motion.a whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} href="https://www.linkedin.com/in/bryanaument/" className="social-pole-link" aria-label="github link" target="_blank" rel="noopener noreferrer">
-        <LinkedInIcon className="social-pole-github-icon" />
+      <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} href="https://www.linkedin.com/in/bryanaument/" className="social-pole-link" aria-label="github link" target="_blank" rel="noopener noreferrer">
+        <LinkedInIcon className="social-pole-linkin-icon" />
       </motion.a>
-      <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} className="social-pole-mail-button" type="button" aria-label="email button" onClick={handleOnClick}>
+      <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="social-pole-mail-button" type="button" aria-label="email button" onClick={handleOnClick}>
         <EmailIcon className="social-pole-email-icon" />
       </motion.button>
       <hr className="social-pole-bar" />

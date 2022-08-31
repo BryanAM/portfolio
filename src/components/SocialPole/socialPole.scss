@@ -4,7 +4,7 @@
   align-items: center;
   display: none;
   flex-direction: column;
-  padding: 0 variables.$rhythm;
+  padding: 0 variables.$rhythm * 2;
 
   a.social-pole-link {
     border-bottom: none;
@@ -14,11 +14,37 @@
     width: 20px;
     color: var(--app-text-color);
     height: auto;
+    
+    &:hover {
+      color: var(--app-accent-color);
+    }
+
   }
 
-  &-email-icon {
-    width: 20px;
+  .social-pole-link {
+    .social-pole-linkin-icon {
+      width: 20px;
+      color: var(--app-text-color);
+      height: auto;
+      
+      &:hover {
+        color: var(--app-accent-color);
+      }
+    }
   }
+
+  .social-pole-mail-button {
+    .social-pole-email-icon {
+      width: 20px;
+      color: var(--app-text-color);
+      height: auto;
+  
+      &:hover {
+        color: var(--app-accent-color);
+      }
+    }
+  }
+
 
   &-mail-button {
     background: none;
@@ -30,6 +56,7 @@
 
   &-bar {
     height: 100px;
+    border-color: var(--app-text-color);
     width: 0;
   }
 }
