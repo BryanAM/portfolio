@@ -1,11 +1,17 @@
 @use '../../assets/variables';
 
+.under-construction-boxes {
+  position: relative;
+}
 
 .under-construction {
   justify-content: center;
   position: relative;
-  display: block;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 .under-construction-box {
@@ -14,7 +20,7 @@
   fill: var(--svg-construction-box-color);
   z-index: -1;
   &:nth-of-type(1) {
-    top: 0px;
+    top: -120px;
     right: 32px;
     scale: 5;
   }

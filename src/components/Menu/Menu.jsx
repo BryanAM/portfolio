@@ -27,7 +27,7 @@ function Menu({ menuOpen, setMenuOpen }) {
     window.addEventListener('resize', handleResize);
     handleResize();
 
-    // prevent scrolling on body if open
+    // prevent scrolling on body if mobileMenu open
     if (menuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
