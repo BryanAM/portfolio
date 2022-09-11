@@ -12,6 +12,10 @@
 
 .app-blur-container {
   width: 100%;
+
+  &.true {
+    overflow: hidden;
+  }
 }
 
 // Font Sizes

@@ -35,7 +35,7 @@ function App() {
     <div className={`App ${theme}`}>
       <BrowserRouter>
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <motion.div variants={appContainerVariants} animate={menuOpen ? 'open' : 'close'} className="app-blur-container">
+        <motion.div variants={appContainerVariants} animate={menuOpen ? 'open' : 'close'} className={`app-blur-container ${menuOpen}`}>
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/*" element={<UnderConstruction />} />

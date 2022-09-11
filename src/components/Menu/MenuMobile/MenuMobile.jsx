@@ -61,9 +61,11 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
   const mobileCloseVariants = {
     open: {
       bottom: 32,
+      scale: 1,
     },
     close: {
       bottom: -64,
+      scale: 0,
     },
   };
 
