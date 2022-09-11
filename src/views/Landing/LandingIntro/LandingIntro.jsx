@@ -5,8 +5,7 @@ function LandingIntro() {
   return (
     <section className="landing-intro">
       <div className="max-content-width">
-        testtesttesttesttesttest
-        testtesttesttesttestt
+        This is where my intro content will go
       </div>
     </section>
   );
