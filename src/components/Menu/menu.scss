@@ -6,6 +6,8 @@
   align-items: center;
   min-height: 74px;
   z-index: 1;
+  position: sticky;
+  top: 0;
 
   // override a:hover links
   a.menu-nav-link {

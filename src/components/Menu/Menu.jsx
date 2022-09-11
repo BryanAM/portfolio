@@ -27,6 +27,13 @@ function Menu({ menuOpen, setMenuOpen }) {
     window.addEventListener('resize', handleResize);
     handleResize();
 
+    // prevent scrolling on body if open
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'scroll';
+    }
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };

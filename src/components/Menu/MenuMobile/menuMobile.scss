@@ -58,7 +58,7 @@
 
 .menu-mobile-button {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   border: none;
   background-color: none;
   border-radius: 50%;
@@ -77,7 +77,7 @@
 
 .menu-mobile-button-close {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   margin-left: auto;
