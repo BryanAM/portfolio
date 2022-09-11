@@ -65,8 +65,8 @@
 @media (min-width: variables.$large) {  
   .social-pole {
     display: flex;
-    position: absolute;
+    position: sticky;
     bottom: 0;
-    left: 0;
+    align-self: flex-start;
   }
 }
