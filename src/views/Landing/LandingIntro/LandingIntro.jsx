@@ -4,7 +4,10 @@ import './landingIntro.scss';
 function LandingIntro() {
   return (
     <section className="landing-intro">
-      test
+      <div className="max-content-width">
+        testtesttesttesttesttest
+        testtesttesttesttestt
+      </div>
     </section>
   );
 }

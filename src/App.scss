@@ -7,19 +7,11 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 $rhythm * 2;
   position: relative;
 }
 
-.app-container {
-  height: 100%;
-  background: var(--app-bg-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 $rhythm * 6;
-  position: relative;
-
+.app-blur-container {
+  width: 100%;
 }
 
 // Font Sizes
@@ -113,8 +105,6 @@ a {
   padding: 0;
 }
 
-@media (min-width: $large) {  
-  .app-container {
-  	max-width: 1036px;
-  }
+.max-content-width {
+  max-width: 1036px;
 }

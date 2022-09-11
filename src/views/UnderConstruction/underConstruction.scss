@@ -1,15 +1,12 @@
 @use '../../assets/variables';
 
 
-.app-container {
+.under-construction {
   justify-content: center;
-  .under-construction {
-    position: relative;
-    display: block;
-    text-align: center;
-  }
+  position: relative;
+  display: block;
+  text-align: center;
 }
-
 
 .under-construction-box {
   margin: variables.$rhythm * 2;
