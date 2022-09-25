@@ -11,8 +11,17 @@
 }
 
 .app-blur-container {
-  width: 100%;
-  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
+  transition: backdrop-filter 0.2s;
+  &.true {
+    backdrop-filter: blur(4px) opacity(1);
+  }
 }
 
 // Font Sizes
