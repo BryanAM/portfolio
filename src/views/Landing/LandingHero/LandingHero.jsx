@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Stack } from '../../../components/index';
+import { ReactComponent as BlobIcon } from '../../../assets/pictograms/blob.svg';
 
 import './landingHero.scss';
 
@@ -13,6 +14,7 @@ function LandingHero() {
         <h2 className="landing-hero-title font-size-300">{t('common.title')}</h2>
         <p className="landing-hero-intro font-size-200">{t('landing.hero.intro')}</p>
       </Stack>
+      <BlobIcon className="blob-icon" />
     </section>
   );
 }
