@@ -4,6 +4,7 @@
   min-height: 400px;
   max-width: 100%;
   min-width: 100%;
+  padding: variables.$rhythm * 4 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -11,7 +12,7 @@
 
 
   &-header {
-    color: var(--app-text-color-accent);
+    color: var(--app-text-color-accent-secondary);
     font-weight: 900;
   }
 
