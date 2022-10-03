@@ -12,6 +12,10 @@
 
   &-stack {
     margin-right: 16px;
+    // stack children spacing
+    > * {
+      margin: 0 4px;
+    }
   }
 
   // override a:hover links

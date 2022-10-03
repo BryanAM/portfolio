@@ -114,7 +114,7 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
         </button>
       </motion.div>
       <div ref={mobileStackRef}>
-        <Stack className={`menu-mobile-stack ${menuOpen ? 'open' : ''}`} flexDirection="column">
+        <Stack className={`menu-mobile-stack ${menuOpen ? 'open' : ''}`} spacing={8} verticalSpacing={2} flexDirection="column">
           <motion.span custom={1} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/" className="font-size-400">{t('menu.home')}</NavLink></motion.span>
           <motion.span custom={2} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink></motion.span>
           <motion.span custom={3} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink></motion.span>
@@ -132,8 +132,8 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
             >
               {theme === 'theme' ? <SunIcon className="menu-mobile-theme-button" /> : <MoonIcon />}
             </motion.button>
-            <motion.button custom={6} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} className="text-button" type="button" onClick={() => i18next.changeLanguage('en')}>EN</motion.button>
-            <motion.button custom={7} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} className="text-button" type="button" onClick={() => i18next.changeLanguage('jp')}>JP</motion.button>
+            <motion.button className="text-button" custom={6} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} type="button" onClick={() => i18next.changeLanguage('en')}>EN</motion.button>
+            <motion.button className="text-button" custom={7} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} type="button" onClick={() => i18next.changeLanguage('jp')}>JP</motion.button>
           </Stack>
         </Stack>
       </div>

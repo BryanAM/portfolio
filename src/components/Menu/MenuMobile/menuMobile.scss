@@ -7,6 +7,10 @@
     left: 16px;
     top: 64px;
     z-index: 2;
+
+    button {
+      margin: 0 4px;
+    }
     
     .menu-mobile-theme-button {
       color: var(--menu-mobile-accent-color);

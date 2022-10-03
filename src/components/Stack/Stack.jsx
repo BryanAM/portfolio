@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './stack.scss';
 
@@ -11,10 +11,8 @@ function Stack({
   alignItems,
   alignContent,
 }) {
-  const stackRef = useRef(null);
   return (
     <div
-      ref={stackRef}
       className={`stack
       ${`j-${justifyContent}`}
       ${`a-${alignItems}`}
