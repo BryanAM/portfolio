@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Stack } from '../../../components/index';
 import Bryan from '../../../assets/pictograms/bryan.jpeg';
+
 import './landingIntro.scss';
 
 function LandingIntro() {

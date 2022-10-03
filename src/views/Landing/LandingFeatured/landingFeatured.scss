@@ -1,0 +1,35 @@
+@use '../../../assets/variables';
+
+.landing-featured {
+  min-height: 400px;
+  padding: variables.$rhythm * 4 0;
+  flex-direction: column;
+  justify-content:center;
+
+  
+}
+
+.landing-intro-feature-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  margin-left: 32px;
+
+  .image {
+    height: auto;
+    max-width: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid black;
+  }
+}
+
+
+@media (min-width: variables.$large) {  
+  .landing-featured {
+   .landing-featured-containter {
+    flex-direction: row;
+  }
+  }
+}

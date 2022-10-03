@@ -13,7 +13,11 @@
 
   &-header {
     color: var(--app-text-color-accent-secondary);
-    font-weight: 900;
+
+    &.featured {
+      color: var(--app-text-color-accent-secondary);
+      margin-top: 32px;
+    }
   }
 
   &-picture {
