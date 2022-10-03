@@ -5,12 +5,15 @@ import Bryan from '../../../assets/pictograms/bryan.jpeg';
 import './landingIntro.scss';
 
 function LandingIntro() {
-  const [t] = useTranslation();
+  const [t] = useTranslation('', { keyPrefix: 'landing.landingIntro' });
   return (
     <section className="landing-intro">
       <div className="max-content-width">
         <Stack className="landing-intro-stack" flexDirection="column" alignItems="center">
-          <h2 className="landing-intro-header">{t('landing.landingIntro.header')}</h2>
+          <Stack flexDirection="column">
+            <h2 className="landing-intro-header">{t('header')}</h2>
+            <p>{t('about')}</p>
+          </Stack>
           <img className="landing-intro-picture" src={Bryan} alt="bryan" />
         </Stack>
       </div>
