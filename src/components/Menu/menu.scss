@@ -10,6 +10,10 @@
   top: 0;
   background-color: var(--app-bg-color);
 
+  &-stack {
+    margin-right: 16px;
+  }
+
   // override a:hover links
   a.menu-nav-link {
     display: block;
