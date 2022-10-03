@@ -5,23 +5,48 @@
   padding: variables.$rhythm * 4 0;
   flex-direction: column;
   justify-content:center;  
-}
 
-.landing-intro-feature-card {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 8px;
-  margin-top: 32px;
-
-  .image {
+  .landing-intro-feature-card {
     height: auto;
-    max-width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 32px;
+    padding: variables.$rhythm * 2;
+    position: relative;
+  
+    a  {
+      color: var(--app-text-color-accent);
+      border-bottom: none;
+      
+      &:hover {
+        &:after {
+          border: 3px solid black;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  
+    .image {
+      height: auto;
+      max-width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
   }
+  
 }
+
 
 
 @media (min-width: variables.$large) {  

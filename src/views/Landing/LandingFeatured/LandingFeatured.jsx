@@ -15,7 +15,7 @@ function LandingFeatured() {
         </Stack>
         <div className="landing-intro-feature-card">
           <img className="image" src={sajeon} alt="sajeon" />
-          <a href="http://labs.midknightelectric.com" target="_blank" rel="noreferrer" aria-label="sajeon link">Sajeon Korean & English Dictionary</a>
+          <a className="landing-intro-feature-card-anchor" href="http://labs.midknightelectric.com" target="_blank" rel="noreferrer" aria-label="sajeon link">Sajeon Korean & English Dictionary</a>
         </div>
       </Stack>
     </section>
