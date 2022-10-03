@@ -4,9 +4,7 @@
   min-height: 400px;
   padding: variables.$rhythm * 4 0;
   flex-direction: column;
-  justify-content:center;
-
-  
+  justify-content:center;  
 }
 
 .landing-intro-feature-card {
@@ -14,7 +12,7 @@
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  margin-left: 32px;
+  margin-top: 32px;
 
   .image {
     height: auto;
@@ -31,5 +29,9 @@
    .landing-featured-containter {
     flex-direction: row;
   }
+  }
+
+  .landing-intro-feature-card {
+    margin-left: 32px;
   }
 }
