@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import './stack.scss';
 
@@ -10,18 +10,8 @@ function Stack({
   justifyContent,
   alignItems,
   alignContent,
-  spacing,
-  verticalSpacing,
 }) {
   const stackRef = useRef(null);
-  useEffect(() => {
-    if (spacing) {
-      stackRef.current.style.setProperty('--stack-spacing', `${spacing}px`);
-    }
-    if (verticalSpacing) {
-      stackRef.current.style.setProperty('--stack-spacing-vertical', `${verticalSpacing}px`);
-    }
-  }, []);
   return (
     <div
       ref={stackRef}
@@ -45,8 +35,6 @@ Stack.defaultProps = {
   flexWrap: 'nowrap',
   justifyContent: 'flex-start',
   className: '',
-  spacing: 0,
-  verticalSpacing: 0,
 };
 
 Stack.propTypes = {
@@ -59,7 +47,5 @@ Stack.propTypes = {
   flexDirection: PropTypes.string,
   flexWrap: PropTypes.string,
   justifyContent: PropTypes.string,
-  spacing: PropTypes.number,
-  verticalSpacing: PropTypes.number,
 };
 export default Stack;

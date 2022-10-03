@@ -114,7 +114,7 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
         </button>
       </motion.div>
       <div ref={mobileStackRef}>
-        <Stack className={`menu-mobile-stack ${menuOpen ? 'open' : ''}`} spacing={8} verticalSpacing={2} flexDirection="column">
+        <Stack className={`menu-mobile-stack ${menuOpen ? 'open' : ''}`} flexDirection="column">
           <motion.span custom={1} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/" className="font-size-400">{t('menu.home')}</NavLink></motion.span>
           <motion.span custom={2} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink></motion.span>
           <motion.span custom={3} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink></motion.span>

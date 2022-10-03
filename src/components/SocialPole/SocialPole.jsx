@@ -12,7 +12,7 @@ function SocialPole() {
   };
 
   return (
-    <Stack className="social-pole" verticalSpacing={10} flexDirection="column" alignContent="center">
+    <Stack className="social-pole" flexDirection="column" alignContent="center">
       <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} href="https://github.com/BryanAM" className="social-pole-link" aria-label="github link" target="_blank" rel="noopener noreferrer">
         <GithubIcon className="social-pole-github-icon" />
       </motion.a>

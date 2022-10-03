@@ -1,10 +1,7 @@
 .stack {
   display: flex;
   > * {
-    margin-left: var(--stack-spacing);
-    margin-right: var(--stack-spacing);
-    margin-top: var(--stack-spacing-vertical);
-    margin-bottom: var(--stack-spacing-vertical);
+    margin: 0;
   }
 };
 
