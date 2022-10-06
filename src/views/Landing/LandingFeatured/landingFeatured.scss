@@ -23,7 +23,7 @@
       padding-top: 16px;
       border-bottom: none;
 
-      &:hover {
+      &:hover, &:focus {
         &:after {
           opacity: 1;
           box-shadow: var(--feature-card-box-shadow);
