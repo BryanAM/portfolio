@@ -11,7 +11,7 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--feature-card-bg-color);
     border-radius: 8px;
     margin-top: 32px;
     padding: variables.$rhythm * 2;
@@ -58,8 +58,7 @@
     .image {
       height: auto;
       max-width: 100%;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
+      border-radius: 8px;
     }
   }
   
