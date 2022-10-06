@@ -15,13 +15,13 @@ function ThemeProvider({ children }) {
     const schema = document.querySelector('meta[name="theme-color"]');
     const userThemePreferences = window.matchMedia('(prefers-color-scheme: dark)');
     if (localTheme) {
-      const headerColor = localTheme === 'theme' ? '#F8F7FD' : '#000';
+      const headerColor = localTheme === 'theme' ? '#F8F7FD' : '#0a0a0a';
       schema.setAttribute('content', headerColor);
       return localTheme;
     }
     const newTheme = userThemePreferences.matches ? 'theme-dark' : 'theme';
     localStorage.setItem('theme', newTheme);
-    const headerColor = newTheme === 'theme' ? '#F8F7FD' : '#000';
+    const headerColor = newTheme === 'theme' ? '#F8F7FD' : '#0a0a0a';
     schema.setAttribute('content', headerColor);
     return newTheme;
   }
