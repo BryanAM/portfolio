@@ -13,24 +13,26 @@ function Footer() {
   };
   return (
     <div className="footer">
-      <Stack className="footer-outer-stack" flexDirection="row" alignItems="center" justifyContent="space-between">
-        <Stack flexDirection="column">
-          <MeIcon />
+      <Stack className="footer-outer-stack" flexDirection="row" alignItems="stretch" justifyContent="space-between">
+        <Stack flexDirection="column" justifyContent="space-between">
+          <MeIcon className="footer-me-icon" />
           <p>© 2022-present Bryan Aument. All Rights Reserved.</p>
         </Stack>
         <Stack flexDirection="column">
-          <p>Links</p>
+          <h3>Links</h3>
           <Stack className="footer-links-stack" flexDirection="column" alignContent="center">
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} href="https://github.com/BryanAM" className="social-pole-link" aria-label="github link" target="_blank" rel="noopener noreferrer">
-              <GithubIcon className="social-pole-github-icon" />
+            <motion.a className="footer-link" whileTap={{ scale: 0.9 }} href="https://github.com/BryanAM" aria-label="github link" target="_blank" rel="noopener noreferrer">
+              <GithubIcon className="footer-link-icon" />
+              <p>github</p>
             </motion.a>
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} href="https://www.linkedin.com/in/bryanaument/" className="social-pole-link" aria-label="github link" target="_blank" rel="noopener noreferrer">
-              <LinkedInIcon className="social-pole-linkin-icon" />
+            <motion.a className="footer-link" whileTap={{ scale: 0.9 }} href="https://www.linkedin.com/in/bryanaument/" aria-label="github link" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon className="footer-link-icon" />
+              <p>Linkedin</p>
             </motion.a>
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} className="social-pole-mail-button" type="button" aria-label="email button" onClick={handleOnClick}>
-              <EmailIcon className="social-pole-email-icon" />
+            <motion.button className="footer-link-button" whileTap={{ scale: 0.9 }} type="button" aria-label="email button" onClick={handleOnClick}>
+              <EmailIcon className="footer-link-icon" />
+              <p>Email</p>
             </motion.button>
-            <hr className="social-pole-bar" />
           </Stack>
         </Stack>
       </Stack>

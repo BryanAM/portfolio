@@ -9,10 +9,12 @@ $large: 768px;
 // Regular Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
 // App Common
+$AppAccentColor: $iris-900;
 $AppBgColor: $lavender-100;
 $AppBgColorSecondary: $lavender-200;
-$AppAccentColor: $iris-900;
 $AppFaviconHoverColor: $midnight-blue-200;
+$AppBlackWhite: $black;
+$AppWhiteBlack: $white;
 
 // App Text
 $AppTextColor: $independence-blue-900;
@@ -47,10 +49,12 @@ $SvgConstructionBoxColor: $lavender-200;
 // Dark Theme ------------ ------------ ------------ ------------ ------------ ------------ ------------
 
 // App Common
+$DarkAppAccentColor: $lavender-600;
 $DarkAppBgColor: $midnight-900;
 $DarkAppBgColorSecondary: $lavender-600;
-$DarkAppAccentColor: $lavender-600;
 $DarkAppFaviconHoverColor: $lavender-500;
+$DarkAppBlackWhite: $white;
+$DarkAppWhiteBlack: $black;
 
 // Dark App
 $DarkAppTextColor: $iris-100;

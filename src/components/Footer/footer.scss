@@ -1,8 +1,49 @@
 .footer {
+  font-family:Arial, Helvetica, sans-serif;
   width: 100%;
   background-color: var(--app-bg-color);
   .footer-outer-stack {
     width: 100%;
-    padding: 0 16px;
+    padding: 32px;
+  }
+
+  .footer-me-icon {
+    width: 25px;
+    height: auto;
+
+    rect {
+      fill: var(--app-black-white);
+    }
+
+    path {
+      fill: var(--app-white-black);
+    }
+  }
+
+  &-link, &-link-button {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 4px 8px;
+    }
+
+    .footer-link-icon {
+      width: 14px;
+    }
+  }
+
+  &-link-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-bottom: 2px solid rgba(255,255,255, 0);
+    &:hover, &:focus {
+      border-bottom: 2px solid var(--app-accent-color);
+    }
   }
 }
