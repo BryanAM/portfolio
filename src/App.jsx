@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import { useTheme } from './contexts/themeContext';
 import Landing from './views/Landing/Landing';
-import { Menu, SocialPole } from './components/index';
+import { Menu, Footer } from './components/index';
 import UnderConstruction from './views/UnderConstruction/UnderConstruction';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <Route path="/*" element={<UnderConstruction />} />
         </Routes>
       </BrowserRouter>
-      <SocialPole />
+      <Footer />
     </div>
   );
 }
