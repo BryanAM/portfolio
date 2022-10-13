@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import Stack from '../Stack/Stack';
 import { ReactComponent as MeIcon } from '../../assets/pictograms/me.svg';
 import { ReactComponent as GithubIcon } from '../../assets/pictograms/github.svg';
@@ -11,12 +12,15 @@ function Footer() {
   const handleOnClick = () => {
     window.location = "mailto:bryaument@gmail.com?subject=Hi, I'm reaching out from your website";
   };
+
+  const [t] = useTranslation('', { keyPrefix: 'footer' });
+
   return (
     <div className="footer">
       <Stack className="footer-outer-stack" flexDirection="row" alignItems="stretch" justifyContent="space-between">
         <Stack flexDirection="column" justifyContent="space-between">
           <MeIcon className="footer-me-icon" />
-          <p>© 2022-present Bryan Aument. All Rights Reserved.</p>
+          <p>{t('copywrite')}</p>
         </Stack>
         <Stack flexDirection="column">
           <h3>Links</h3>

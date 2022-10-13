@@ -3,6 +3,9 @@
     "name": "Bryan Aument",
     "title": "Software Developer"
   },
+  "footer": {
+    "copywrite": "© 2022-present Bryan Aument. All Rights Reserved."
+  },
   "landing": {
     "hero": {
       "intro": "I'm a software engineer and I build user focused web tools and applications. My current focus is on bringing theming and internationalization to an eclectic group of projects."

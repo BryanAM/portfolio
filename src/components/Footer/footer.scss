@@ -1,3 +1,5 @@
+@use '../../assets/variables';
+
 .footer {
   font-family:Arial, Helvetica, sans-serif;
   width: 100%;
@@ -24,6 +26,11 @@
     font-size: 12px;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(0,0,0, 0);
+    padding-bottom: 2px;
+
     p {
       margin: 4px 8px;
     }
@@ -31,6 +38,29 @@
     .footer-link-icon {
       width: 14px;
     }
+
+    &:hover {
+      border: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: variables.$rhythm / 2;
+      background-color: var(--app-accent-color);
+      opacity: 0;
+      transition: opacity 300ms, transform 300ms;
+      transform: translate3d(-100%, 0, 0);
+    }
+    &:hover::after,
+    &:active::after {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+
   }
 
   &-link-button {
@@ -41,9 +71,8 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    border-bottom: 2px solid rgba(255,255,255, 0);
-    &:hover, &:focus {
-      border-bottom: 2px solid var(--app-accent-color);
-    }
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid rgba(255,255,255, 0);
   }
 }
