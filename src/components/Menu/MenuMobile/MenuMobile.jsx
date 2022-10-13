@@ -10,9 +10,10 @@ import { ReactComponent as MoonIcon } from '../../../assets/pictograms/moon.svg'
 import { ReactComponent as SunIcon } from '../../../assets/pictograms/sun.svg';
 import { useTheme } from '../../../contexts/themeContext';
 import './menuMobile.scss';
+import LanguageSwitcher from '../../LanguageSwitcher/LanguageSwitcher';
 
 function MenuMobile({ menuOpen, setMenuOpen }) {
-  const [t, i18next] = useTranslation();
+  const [t] = useTranslation();
   const mobileMenuRef = useRef(null);
   const mobileStackRef = useRef(null);
   const { theme, setTheme } = useTheme();
@@ -132,8 +133,9 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
             >
               {theme === 'theme' ? <SunIcon className="menu-mobile-theme-button" /> : <MoonIcon />}
             </motion.button>
-            <motion.button className="text-button" custom={6} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} type="button" onClick={() => i18next.changeLanguage('en')}>EN</motion.button>
-            <motion.button className="text-button" custom={7} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants} type="button" onClick={() => i18next.changeLanguage('jp')}>JP</motion.button>
+            <motion.div custom={6} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}>
+              <LanguageSwitcher />
+            </motion.div>
           </Stack>
         </Stack>
       </div>
