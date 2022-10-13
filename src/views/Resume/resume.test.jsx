@@ -1,7 +1,7 @@
 import React from 'react';
 import { customRender } from '../../utils/test-utils';
-import Landing from './Landing';
+import Resume from './Resume';
 
 test('renders landing hero', () => {
-  customRender(<Landing />);
+  customRender(<Resume />);
 });
