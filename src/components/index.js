@@ -1,5 +1,6 @@
 import Card from './Card/Card';
 import Footer from './Footer/Footer';
+import LanguageSwitcher from './LanguageSwitcher/LanguageSwitcher';
 import Stack from './Stack/Stack';
 import Menu from './Menu/Menu';
 
@@ -8,6 +9,7 @@ export {
   // eslint-disable-next-line import/prefer-default-export
   Card,
   Footer,
+  LanguageSwitcher,
   Stack,
   Menu,
 };

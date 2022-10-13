@@ -1,7 +1,12 @@
 {
   "common": {
+    "en": "English",
     "name": "Bryan Aument",
+    "jp": "日本語",
     "title": "ウェブ開発者"
+  },
+  "footer": {
+    "copywrite": "© 2022年ー現在 Bryan Aument。不許複製"
   },
   "landing": {
     "hero": {

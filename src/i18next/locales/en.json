@@ -1,7 +1,9 @@
 {
   "common": {
+    "en": "English",
     "name": "Bryan Aument",
-    "title": "Software Developer"
+    "jp": "日本語",
+    "title": "ウェブ開発者"
   },
   "footer": {
     "copywrite": "© 2022-present Bryan Aument. All Rights Reserved."

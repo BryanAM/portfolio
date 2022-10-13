@@ -9,6 +9,7 @@ import { ReactComponent as SunIcon } from '../../assets/pictograms/sun.svg';
 import { useTheme } from '../../contexts/themeContext';
 import MobileMenu from './MenuMobile/MenuMobile';
 import './menu.scss';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 function Menu({ menuOpen, setMenuOpen }) {
   const [t, i18next] = useTranslation();
@@ -56,6 +57,7 @@ function Menu({ menuOpen, setMenuOpen }) {
           </button>
           <button className="text-button" type="button" onClick={() => i18next.changeLanguage('en')}>EN</button>
           <button className="text-button" type="button" onClick={() => i18next.changeLanguage('jp')}>JP</button>
+          <LanguageSwitcher />
         </Stack>
       )}
     </nav>
