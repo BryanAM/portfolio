@@ -12,7 +12,7 @@ import './menu.scss';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 function Menu({ menuOpen, setMenuOpen }) {
-  const [t, i18next] = useTranslation();
+  const [t] = useTranslation();
   const { theme, setTheme } = useTheme();
   const [mobile, setMobile] = useState(false);
 
@@ -46,7 +46,7 @@ function Menu({ menuOpen, setMenuOpen }) {
       {mobile ? (
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       ) : (
-        <Stack className="menu-stack">
+        <Stack className="menu-stack" alignItems="center">
           <NavLink className="menu-nav-link" to="/">{t('menu.home')}</NavLink>
           <NavLink className="menu-nav-link" to="/posts">{t('menu.posts')}</NavLink>
           <NavLink className="menu-nav-link" to="/projects">{t('menu.projects')}</NavLink>
@@ -55,8 +55,6 @@ function Menu({ menuOpen, setMenuOpen }) {
           <button type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
             {theme === 'theme' ? <SunIcon /> : <MoonIcon />}
           </button>
-          <button className="text-button" type="button" onClick={() => i18next.changeLanguage('en')}>EN</button>
-          <button className="text-button" type="button" onClick={() => i18next.changeLanguage('jp')}>JP</button>
           <LanguageSwitcher />
         </Stack>
       )}
