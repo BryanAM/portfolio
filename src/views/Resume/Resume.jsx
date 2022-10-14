@@ -1,16 +1,23 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Stack } from '../../components/index';
+import resume from '../../assets/files/bryan_aument.pdf';
+import { ReactComponent as DownloadIcon } from '../../assets/pictograms/document-download.svg';
 import './resume.scss';
 
 function Resume() {
   const { t } = useTranslation();
   return (
-    <div className="max-content-width">
+    <div>
       <Stack className="resume" flexDirection="column">
         <Stack className="resume-headers resume-stack" flexDirection="column" alignItems="center">
           <h1>{t('common.name')}</h1>
-          <h2 className="resume-highlighted-item">{t('common.title')}</h2>
+          <div>
+            <h2 className="resume-highlighted-item">{t('common.title')}</h2>
+            <a className="resume-download-button text-button" title="download" href={resume} download="bryan_aument.pdf">
+              <DownloadIcon className="resume-download-icon" />
+            </a>
+          </div>
         </Stack>
         <Stack className="resume-stack" flexDirection="column">
           <h3 className="resume-section-header resume-highlighted-item">{t('resume.workExperience')}</h3>

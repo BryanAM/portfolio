@@ -23,4 +23,18 @@
   &-work-header, &-education-header {
     margin-top: 8px
   }
+
+  &-download-button {
+    display: flex;
+    align-items: center;
+    &:hover {
+      border: none;
+    }
+  }
+
+  &-download-icon {
+    path {
+      fill: var(--app-accent-color);
+    }
+  }
 }
