@@ -30,6 +30,7 @@
     "resume": "Resume"
   },
   "resume": {
+    "additional": "Additional Work & Skills",
     "educationTech": "Education & Tech",
     "jobs": [
       {
@@ -37,8 +38,8 @@
         "experiences": [
           "Integrated API for internal client form submissions and implemented submission flow UI - mobile first design.",
           "Built a starter application for rapid prototyping  of web apps; generated sample landing and submission pages.",
-          "Created custom web-components for a design system, built to spec including test coverage at a 80% threshold.",
-          "Migrated data via DFS algorithm and script to mirror box notes, convert the file types, and save the file structure."
+          "Created custom web-components with StencilJS, built to spec including test coverage at a 80% threshold.",
+          "Lead a team of developers to customize a react-mui compononet library style schema for design system alignment."
         ],
         "dates": "8/2019 - Present",
         "title": "Front End Software Engineer"
@@ -46,7 +47,7 @@
       {
         "company": "Japan Exchange and Teaching Program",
         "experiences": [
-          "Developed and taught curriculum for 11 schools and developed a volunteer organization to assist the US Embassy's public affairs study abroad programs. "
+          "Developed, lead, and taught English education curriculum & US culture for 11 schools."
         ],
         "dates": "8/2013 - 8/2016",
         "title": "English Teacher"
@@ -67,6 +68,11 @@
         "dates": "10/2016 - 5/2018",
         "title": "Specialist"
       }
+    ],
+    "other": [
+      "Japanese Language Proficiency: Advanced",
+      "US Embassy in Tokyo Japan: 10/2014 - 4/2019: Created volunteer group to assist cultural programs for students.",
+      "Embassy of Japan in DC: Gave keynote presentation on life in Japan and assisted with PR video production"
     ],
     "techStack": [
       "Javascript",
@@ -89,7 +95,7 @@
       { 
         "date": "5/2012",
         "major": "B.A. International Politics",
-        "name": "Millersville University",
+        "name": "The Pennsylvania State University",
         "extras": [
           "B.A. Japanese"
         ]

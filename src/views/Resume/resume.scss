@@ -5,10 +5,22 @@
 
   &-stack {
     min-width: 100%;
-    border-bottom: 1px solid black;
+   &:nth-child(n + 2) {
+    border-top: 1px solid var(--app-black-white);
+    margin-top: 16px;
+   }
+  }
+
+  &-highlighted-item {
+    font-weight: 600;
+    color: var(--app-text-color-accent);
   }
 
   &-section-header {
     padding: 16px 0;
+  }
+
+  &-work-header, &-education-header {
+    margin-top: 8px
   }
 }

@@ -29,6 +29,80 @@
     "projects": "プロジェツト",
     "resume": "履歴書"
   },
+  "resume": {
+    "additional": "その他のスキルと経歴",
+    "educationTech": "学歴 & テック",
+    "jobs": [
+      {
+        "company": "Ernst & Young",
+        "experiences": [
+          "クライアントの送信フォームのためにAPI総合し、 モバイルファースト的な送信フォームを開発されました。",
+          "連続の基本形ウェブアプリをさっそく作るためのアプリを開発され、様々なSPAなども実装されました。",
+          "StencilJSを利用してカスタムのウェブコンポーネントを作り、80%のテストカバレッジを確保されました。",
+          "デザインシステムに沿うため、react-mui component libraryのスタイルをカスタマイズし、開発のチームを指導されました。"
+        ],
+        "dates": "8/2019 - 現在",
+        "title": "フロントエンド・ウェブ開発者"
+      },
+      {
+        "company": "Japan Exchange and Teaching Program",
+        "experiences": [
+          "それぞれの11個の学校に通い、英語と文化的な内容を創り、教えられました。"
+        ],
+        "dates": "8/2013 - 8/2016",
+        "title": "英語教師"
+      },
+      {
+        "company": "Northrop Grumman",
+        "experiences": [
+          "開発のチームのためにDjangoとPythonとJSを利用し、データを送信するウェブアプリケーションのツールを開発されました。"
+        ],
+        "dates": "5/2018 - 8/2018",
+        "title": "ソフトウェア開発の実習生"
+      },
+      {
+        "company": "Apple",
+        "experiences": [
+          "第3Qまでにやく$500,000売上を超えたとともに、 98% NPS（お客様向けの評判）を確保されました。"
+        ],
+        "dates": "10/2016 - 5/2018",
+        "title": "スペシャリスト"
+      }
+    ],
+    "other": [
+      "日本語能力: ２級ぐらい",
+      "日本在アメリカ大使館: 10/2014 - 4/2019: 国際交流に貢献するため、アメリカ大使館を支援するボランティア団体を設けました。",
+      "米国在日本大使館: 日本にて教育の生活や仕事に関して発表した上、JETプログラム用のPRビデオを支援しました。"
+    ],
+    "techStack": [
+      "Javascript",
+      "StencilJS",
+      "S(CSS)",
+      "HTML",
+      "RTL & JEST",
+      "i18next",
+      "Angular"
+    ],
+    "schools": [
+      { 
+        "date": "5/2019",
+        "major": "理学士：コンピューター・サイエンス: GPA 3.92",
+        "name": "Millersville University",
+        "extras": [
+          "Magna Cum Laude優等"
+        ]
+      },
+      { 
+        "date": "5/2012",
+        "major": "文学士：国際政治学",
+        "name": "The Pennsylvania State University",
+        "extras": [
+          "文学士：日本語"
+        ]
+      }
+    ],
+    "workExperience": "職歴"
+  },
   "underConstruction": {
     "heading": "工事中",
     "description": "このページは実装されるので、少々お待ち下さい！"
