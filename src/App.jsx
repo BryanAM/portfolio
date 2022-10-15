@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from 'react-router-dom';
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <BrowserRouter>
+      <HashRouter>
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div className={`app-blur-container ${menuOpen}`} />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/*" element={<UnderConstruction />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   );
