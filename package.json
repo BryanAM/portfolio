@@ -2,6 +2,7 @@
   "name": "starter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bryanam.github.io/me/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -23,7 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "yarn run eslint ./src"
+    "lint": "yarn run eslint ./src",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^4.0.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0"
   }
