@@ -1,4 +1,4 @@
-const postArray = [
+const postData = [
   {
     description: 'Written and spoken languages are the physical manifestations of thought; they’re mechanisms by which our expressions of emotions and logical processes are transcribed from our inner beings to paper.',
     header: 'Translating your web app ⇄ウェブアプリの翻訳',
@@ -11,4 +11,4 @@ const postArray = [
   },
 ];
 
-export default postArray;
+export default postData;
