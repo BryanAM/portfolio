@@ -29,6 +29,9 @@
     "projects": "Projects",
     "resume": "Resume"
   },
+  "posts": {
+    "header": "Recent Posts"
+  },
   "resume": {
     "additional": "Additional Work & Skills",
     "educationTech": "Education & Tech",

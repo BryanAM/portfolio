@@ -29,6 +29,9 @@
     "projects": "プロジェツト",
     "resume": "履歴書"
   },
+  "posts": {
+    "header": "最近の登板"
+  },
   "resume": {
     "additional": "その他のスキルと経歴",
     "educationTech": "学歴 & テック",

@@ -5,8 +5,8 @@ const postData = [
     url: 'https://studio.ey.com/blog/translating/',
   },
   {
-    description: 'Welcome to your first year, Developer',
-    header: 'The vicissitudes brought forth by the changing seasons, months and years present a unique opportunity at each fissure: either bridge the gaps to complete one’s goal, or ascend into a completely new set of circumstances and potential. ',
+    description: 'The vicissitudes brought forth by the changing seasons, months and years present a unique opportunity at each fissure: either bridge the gaps to complete one’s goal, or ascend into a completely new set of circumstances and potential.',
+    header: 'Welcome to your first year, Developer',
     url: 'https://studio.ey.com/blog/welcome-developer/',
   },
 ];
