@@ -1,6 +1,7 @@
 import Card from './Card/Card';
 import Footer from './Footer/Footer';
 import LanguageSwitcher from './LanguageSwitcher/LanguageSwitcher';
+import Post from './Post/Post';
 import Stack from './Stack/Stack';
 import Menu from './Menu/Menu';
 
@@ -10,6 +11,7 @@ export {
   Card,
   Footer,
   LanguageSwitcher,
+  Post,
   Stack,
   Menu,
 };
