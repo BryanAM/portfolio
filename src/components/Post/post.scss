@@ -1,0 +1,12 @@
+@use '../../assets/variables';
+
+.post {
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: variables.$rhythm * 2;
+  transition: background-color 1s ease-in-out; 
+  &:hover, &:focus, &:active {
+    background-color: var(--app-bg-color-secondary);
+    border-bottom: 2px solid transparent;
+  }
+}

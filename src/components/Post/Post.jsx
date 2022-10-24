@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './post.scss';
 
 function Post({ url, header, description }) {
   return (
