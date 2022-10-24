@@ -1,3 +1,9 @@
+@use '../../assets/variables';
 .posts {
   min-height: 100vh;
+  margin-top: variables.$rhythm * 10;
+
+  &-header {
+    color: var(--app-text-color-accent)
+  }
 }

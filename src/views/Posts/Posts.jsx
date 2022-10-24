@@ -10,7 +10,7 @@ function Posts() {
   return (
     <div className="max-content-width posts">
       <Stack flexDirection="column">
-        <h1>{t('posts.header')}</h1>
+        <h1 className="posts-header">{t('posts.header')}</h1>
         {postData.map((post) => (
           <Post
             description={post.description}
