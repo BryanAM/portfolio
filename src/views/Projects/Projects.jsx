@@ -8,7 +8,7 @@ function Projects() {
   return (
     <div className="max-content-width projects">
       <Stack flexDirection="column">
-        <h1 className="posts-header">{t('posts.header')}</h1>
+        <h1 className="posts-header">{t('projects.header')}</h1>
       </Stack>
     </div>
   );
