@@ -8,6 +8,7 @@ import {
 import { useTheme } from './contexts/themeContext';
 import Landing from './views/Landing/Landing';
 import Posts from './views/Posts/Posts';
+import Projects from './views/Projects/Projects';
 import { Menu, Footer } from './components/index';
 import UnderConstruction from './views/UnderConstruction/UnderConstruction';
 import Resume from './views/Resume/Resume';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/posts" element={<Posts />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/*" element={<UnderConstruction />} />
         </Routes>
       </HashRouter>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import postData from '../../assets/posts/posts';
+import postData from '../../assets/data/posts';
 import Post from '../../components/Post/Post';
 import { Stack } from '../../components';
 import './posts.scss';
