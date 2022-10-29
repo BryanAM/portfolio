@@ -11,7 +11,7 @@ function Projects() {
 
   const headers = {
     'Content-Type': 'application/json',
-    Authorization: 'bearer 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',
+    Authorization: `bearer ${process.env.REACT_APP_GITHUB_ACCESS_TOKEN}`,
   };
 
   useEffect(() => {
