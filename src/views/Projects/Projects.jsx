@@ -26,7 +26,6 @@ function Projects() {
         .then((res) => res.json())
         .then((res) => {
           const gitHubData = res.data.user.repositories.edges;
-          console.log(gitHubData);
           setRepos(gitHubData.map((item) => ({ data: item.node, key: v1() })));
         });
     };
@@ -41,6 +40,8 @@ function Projects() {
         {repos && repos.map((repo) => (
           <Card key={repo.key}>
             <h1>{repo.data.name}</h1>
+            <p>{repo.data.description}</p>
+            <a href={repo.data.url}>Github</a>
           </Card>
         ))}
       </Stack>
