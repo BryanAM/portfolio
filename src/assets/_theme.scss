@@ -25,6 +25,8 @@
 
 
   // Feature Theming
+  --card-border-color: #{$CardBorderColor};
+  --card-border-hover-color: #{$CardBorderHoverColor};
   --feature-card-bg-color: #{$FeatureCardBGColor};
   --feature-card-box-shadow: #{$FeatureCardBoxShadow};
 

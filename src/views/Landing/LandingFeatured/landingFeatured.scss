@@ -16,7 +16,7 @@
     margin-top: 32px;
     padding: variables.$rhythm * 2;
     position: relative;
-    border: 1px solid var(--app-bg-color-secondary);
+    border:2px solid var(--card-border-color);
 
     a  {
       color: var(--app-text-color);
@@ -42,6 +42,10 @@
         box-shadow: var(--feature-card-box-shadow);
         transition: opacity 0.3s ease-in-out;
       }
+    }
+
+    &:hover {
+      border-color: var(--card-border-hover-color);
     }
   
     .image {

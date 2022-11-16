@@ -26,15 +26,16 @@ $AppTextColorSecondary: $independence-blue-700;
 $ButtonTextButtonColor: $AppTextColor;
 
 // Feature Theming
+$CardBorderColor: $lavender-200;
+$CardBorderHoverColor: $iris-300;
 $FeatureCardBGColor: $white;
 $FeatureCardBoxShadow: 
-  -2.8px 1.4px 2.2px rgba(105, 106, 218, 0.04),
-  -6.7px 3.3px 5.3px rgba(105, 106, 218, 0.06),
-  -12.5px 6.3px 10px rgba(105, 106, 218, 0.07),
-  -22.3px 11.2px 17.9px rgba(105, 106, 218, 0.08),
-  -41.8px 20.9px 33.4px rgba(105, 106, 218, 0.09),
-  -60px 50px 80px rgba(105, 106, 218, 0.1);
-
+0 1px 2px rgba(105, 106, 218,0.2), 
+0 2px 4px rgba(105, 106, 218,0.2), 
+0 4px 8px rgba(105, 106, 218,0.2), 
+0 8px 16px rgba(105, 106, 218,0.2),
+0 16px 32px rgba(105, 106, 218,0.2), 
+0 32px 64px rgba(105, 106, 218,0.2);
 // Links
 $AppLinkColor: $independence-blue-900;
 
@@ -67,13 +68,16 @@ $DarkAppTextColorSecondary: $iris-200;
 $DarkButtonTextButtonColor: $white;
 
 // Dark Feature Theming
-$DarkFeatureCardBGColor: $lavender-600;
-$DarkFeatureCardBoxShadow: 
-  -2.8px 1.4px 2.2px rgba(0, 0, 0, 0.2),
-  -6.7px 3.3px 5.3px rgba(0, 0, 0, 0.2),
-  -12.5px 6.3px 10px rgba(0, 0, 0, 0.5),
-  -22.3px 11.2px 17.9px rgba(0, 0, 0, 0.4),
-  -41.8px 20.9px 33.4px rgba(0, 0, 0, 0.4);
+$DarkCardBorderColor: $midnight-400;
+$DarkCardBorderHoverColor: $lavender-600;
+$DarkFeatureCardBGColor: $midnight-600;
+$DarkFeatureCardBoxShadow:
+0 1px 2px rgba(145, 130, 224,0.4), 
+0 2px 4px rgba(145, 130, 224,0.4), 
+0 4px 8px rgba(145, 130, 224,0.4), 
+0 8px 16px rgba(145, 130, 224,0.4),
+0 16px 32px rgba(145, 130, 224,0.1), 
+0 32px 64px rgba(145, 130, 224,0.05);
 
 // Dark Links
 $DarkAppLinkColor: $DarkAppTextColor;
