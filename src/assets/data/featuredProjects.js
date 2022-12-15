@@ -2,7 +2,7 @@ const projectsData = [
   {
     descriptoin: 'A responsive Korean & English dictionary',
     title: 'Sajeon',
-    url: 'http://labs.midknightelectric.com',
+    url: 'https://labs.midknightelectric.com',
     github: '',
   },
 ];

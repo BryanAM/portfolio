@@ -16,7 +16,7 @@ function LandingFeatured() {
         </Stack>
         <motion.div whileHover={{ scale: 1.01 }} className="landing-intro-feature-card">
           <img className="image" src={sajeon} alt="sajeon" />
-          <a className="landing-intro-feature-card-anchor" href="http://labs.midknightelectric.com" target="_blank" rel="noreferrer" aria-label="sajeon link">{t('anchor')}</a>
+          <a className="landing-intro-feature-card-anchor" href="https://labs.midknightelectric.com" target="_blank" rel="noreferrer" aria-label="sajeon link">{t('anchor')}</a>
         </motion.div>
       </Stack>
     </section>
