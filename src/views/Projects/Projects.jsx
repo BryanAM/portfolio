@@ -2,18 +2,26 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { v1 } from 'uuid';
 import { Stack, Card } from '../../components/index';
+import REPO_QUERY from '../../assets/data/githubQuery';
 import './projects.scss';
 
 function Projects() {
   const [t] = useTranslation();
   const [repos, setRepos] = useState();
 
-  const fetchGithubDataUrl = 'http://localhost:3001/github-info';
+  const baseUrl = 'https://api.github.com/graphql';
+
+  const headers = {
+    'Content-Type': 'application/json',
+    Authorization: `bearer ${process.env.REACT_APP_GITHUB_ACCESS_TOKEN}`,
+  };
 
   useEffect(() => {
     const fetchResponse = async () => {
-      fetch(fetchGithubDataUrl, {
-        method: 'GET',
+      fetch(baseUrl, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(REPO_QUERY),
       })
         .then((res) => res.json())
         .then((res) => {
