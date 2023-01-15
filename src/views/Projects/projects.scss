@@ -1,7 +1,15 @@
 @use '../../assets/variables';
 
 .projects {
-  min-height: 100vh;
   margin-top: variables.$rhythm * 10;
+
+  &-cards {
+    display: flex;
+    flex-direction: row;
+
+    &-wrapper {
+      gap: 16px;
+    }
+  }
 
 }

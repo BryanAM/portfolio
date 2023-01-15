@@ -1,4 +1,66 @@
-@use '../../assets/' as *;
+@use '../../assets/variables';
 
 .card {
+  height: 250px;
+  width: 450px;
+  flex-direction: column;
+  justify-content:center;  
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--feature-card-bg-color);
+  border-radius: 8px;
+  margin: 32px;
+  position: relative;
+  border:2px solid var(--card-border-color);
+  overflow: hidden;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(32px) opacity(1);
+    border-radius: 8px;
+  }
+
+  &:hover {
+    box-shadow: var(--feature-card-box-shadow);
+  }
+
+  &-blob { 
+    color: red;
+    height: 450px;
+    width: 700px;
+    position: absolute;
+    top: -200px;
+    opacity: 0.5;
+    &.left {
+      left: -80px
+    }
+    &.right {
+      color: blue;
+      right: -100px;
+      transform: scaleX(-1);
+    }
+  }
+
+  a  {
+    color: var(--app-text-color);
+    padding-top: 16px;
+    border-bottom: none;
+  }
+
+  &:hover {
+    border-color: var(--card-border-hover-color);
+  }
+
+  .image {
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+  }
 }
