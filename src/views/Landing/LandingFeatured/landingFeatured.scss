@@ -5,6 +5,12 @@
   padding: variables.$rhythm * 4 0;
   flex-direction: column;
   justify-content:center;  
+
+
+}
+
+.landing-featured-containter {
+  box-sizing: initial;
 }
 
 @media (min-width: variables.$large) {  
