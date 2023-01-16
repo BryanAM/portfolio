@@ -2,7 +2,7 @@
 
 .theme-dark {
 
-  // App Primary Colors 
+  // Dark  App Primary Colors 
   --app-accent-color: #{$DarkAppAccentColor};
   --app-bg-color: #{$DarkAppBgColor};
   --app-bg-color-secondary: #{$DarkAppBgColorSecondary};
@@ -10,29 +10,33 @@
   --app-black-white: #{$DarkAppBlackWhite};
   --app-white-black: #{$DarkAppWhiteBlack};
 
-  // App Text Color Theming
+  // Dark App Text Color Theming
   --app-text-color: #{$DarkAppTextColor};
   --app-text-color-secondary: #{$DarkAppTextColorSecondary};
   --app-text-color-accent: #{$DarkAppTextColorAccent};
   --app-text-color-accent-secondary: #{$DarkAppTextColorAccentSecondary};
 
-  // App Link Color Theming
+  // Dark App Link Color Theming
   --app-link-color: #{$DarkAppLinkColor};
 
-  // Button
+  // Dark Button
   --button-text-button-color: #{$DarkButtonTextButtonColor};
 
-  // Feature Theming
+  // Dark Blob
+  --blob-color-left: #{$DarkBlobColorLeft};
+  --blob-color-right: #{$DarkBlobColorRight};
+
+  // Dark Feature Theming
   --card-border-color: #{$DarkCardBorderColor};
   --card-border-hover-color: #{$DarkCardBorderHoverColor};
   --feature-card-bg-color: #{$DarkFeatureCardBGColor};
   --feature-card-box-shadow: #{$DarkFeatureCardBoxShadow};
 
-  // Menu Theming
+  // Dark Menu Theming
   --menu-mobile-accent-color: #{$DarkMenuMobileAccentColor};
   --menu-mobile-bg-color: #{$DarkMenuMobileBGColor};
   --menu-mobile-link-text-color: #{$DarkMenuMobileLinkTextColor};
 
-  // SVG & Icons
+  // Dark  SVG & Icons
   --svg-construction-box-color: #{$DarkSvgConstructionBoxColor};
 }

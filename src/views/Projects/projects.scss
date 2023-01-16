@@ -3,6 +3,10 @@
 .projects {
   margin-top: variables.$rhythm * 10;
 
+  .posts-header {
+    margin-bottom: variables.$rhythm * 2;
+  }
+
   &-cards {
     display: flex;
     flex-direction: row;

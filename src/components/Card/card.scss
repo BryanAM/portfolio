@@ -1,6 +1,9 @@
 @use '../../assets/variables';
+@use '../../assets/typography';
 
 .card {
+  min-height: 250px;
+  min-width: 450px;
   height: 250px;
   width: 450px;
   flex-direction: column;
@@ -18,6 +21,8 @@
   transition: box-shadow 0.3s ease-in-out;
 
   &-content-wrapper {
+    box-sizing: border-box;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +30,11 @@
     height: 100%;
     backdrop-filter: blur(32px) opacity(1);
     border-radius: 8px;
+
+    p {
+      text-align: left;
+      color: var(--app-text-color-secondary);
+    }
   }
 
   &:hover {
@@ -32,17 +42,17 @@
   }
 
   &-blob { 
-    color: red;
     height: 450px;
     width: 700px;
     position: absolute;
     top: -200px;
-    opacity: 0.5;
+    opacity: 0.2;
     &.left {
+      color: var(--blob-color-left);
       left: -80px
     }
     &.right {
-      color: blue;
+      color: var(--blob-color-right);
       right: -100px;
       transform: scaleX(-1);
     }

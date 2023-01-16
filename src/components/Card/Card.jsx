@@ -13,7 +13,7 @@ function Card({ children, data }) {
         <Blob />
       </div>
       <div className="card-content-wrapper">
-        <a href={data.url} target="_blank" rel="noreferrer" aria-label="sajeon link">{data.title}</a>
+        <a className="font-size-300" href={data.url} target="_blank" rel="noreferrer" aria-label="sajeon link">{data.title}</a>
         <p>{data.description}</p>
         {children}
       </div>

@@ -5,68 +5,12 @@
   padding: variables.$rhythm * 4 0;
   flex-direction: column;
   justify-content:center;  
-
-  .landing-intro-feature-card {
-    height: auto;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    background-color: var(--feature-card-bg-color);
-    border-radius: 8px;
-    margin-top: 32px;
-    padding: variables.$rhythm * 2;
-    position: relative;
-    border:2px solid var(--card-border-color);
-
-    a  {
-      color: var(--app-text-color);
-      padding-top: 16px;
-      border-bottom: none;
-
-      &:hover, &:focus {
-        &:after {
-          opacity: 1;
-          box-shadow: var(--feature-card-box-shadow);
-        }
-      }
-
-      &:after {
-        content: '';
-        position: absolute;
-        border-radius: 8px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        box-shadow: var(--feature-card-box-shadow);
-        transition: opacity 0.3s ease-in-out;
-      }
-    }
-
-    &:hover {
-      border-color: var(--card-border-hover-color);
-    }
-  
-    .image {
-      height: auto;
-      max-width: 100%;
-      border-radius: 8px;
-    }
-  }
-  
 }
-
-
 
 @media (min-width: variables.$large) {  
   .landing-featured {
    .landing-featured-containter {
     flex-direction: row;
-  }
-  }
-
-  .landing-intro-feature-card {
-    margin-left: 32px;
+   }
   }
 }

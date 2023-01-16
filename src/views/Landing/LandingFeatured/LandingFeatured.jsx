@@ -1,8 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Stack } from '../../../components/index';
-import sajeon from '../../../assets/pictograms/sajeon.png';
+import projects from '../../../assets/data/projects';
+import { Card, Stack } from '../../../components/index';
 import './landingFeatured.scss';
 
 function LandingFeatured() {
@@ -14,10 +13,7 @@ function LandingFeatured() {
           <h2 className="landing-intro-header featured">{t('featured')}</h2>
           <p>{t('description')}</p>
         </Stack>
-        <motion.div whileHover={{ scale: 1.01 }} className="landing-intro-feature-card">
-          <img className="image" src={sajeon} alt="sajeon" />
-          <a className="landing-intro-feature-card-anchor" href="https://labs.midknightelectric.com" target="_blank" rel="noreferrer" aria-label="sajeon link">{t('anchor')}</a>
-        </motion.div>
+        <Card key={projects[0].key} data={projects[0]} />
       </Stack>
     </section>
   );
