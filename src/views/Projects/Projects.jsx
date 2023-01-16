@@ -11,7 +11,7 @@ function Projects() {
     <div className="max-content-width projects">
       <Stack flexDirection="column">
         <h1 className="posts-header">{t('projects.header')}</h1>
-        <Stack className="projects-cards-wrapper" flexDirection="row" flexWrap="wrap" gap={16}>
+        <Stack className="projects-cards-wrapper" justifyContent="center" flexDirection="row" flexWrap="wrap" gap={16}>
           {projects && projects.map((project) => (
             <Card key={project.key} data={project} />
           ))}

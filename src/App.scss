@@ -118,3 +118,15 @@ a {
   max-width: 1036px;
   padding: 0 $rhythm * 6;
 }
+
+@media (max-width: 320px) {  
+  .max-content-width  {
+    padding: 0 $rhythm * 2;
+  }
+}
+
+@media (max-width: 375px) {  
+  .max-content-width  {
+    padding: 0 $rhythm * 4;
+  }
+}

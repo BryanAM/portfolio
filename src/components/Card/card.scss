@@ -2,10 +2,9 @@
 @use '../../assets/typography';
 
 .card {
+
   min-height: 250px;
-  min-width: 450px;
-  height: 250px;
-  width: 450px;
+  width: 100%;
   flex-direction: column;
   justify-content:center;  
   display: flex;
@@ -90,3 +89,13 @@
     border-radius: 8px;
   }
 }
+
+@media (min-width: variables.$large) {  
+  .card {
+    min-height: 250px;
+    min-width: 450px;
+    height: 250px;
+    width: 450px;
+  }
+}
+
