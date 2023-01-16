@@ -13,6 +13,7 @@ function Posts() {
         <h1 className="posts-header">{t('posts.header')}</h1>
         {postData.map((post) => (
           <Post
+            key={post.id}
             description={post.description}
             header={post.header}
             url={post.url}
