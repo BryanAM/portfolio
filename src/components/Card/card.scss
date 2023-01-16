@@ -13,7 +13,6 @@
   flex-direction: column;
   background-color: var(--feature-card-bg-color);
   border-radius: 8px;
-  margin: 32px;
   position: relative;
   border:2px solid var(--card-border-color);
   overflow: hidden;
@@ -34,6 +33,14 @@
     p {
       text-align: left;
       color: var(--app-text-color-secondary);
+    }
+
+    .card-content-tag {
+      font-size: 10px;
+      border: 1px solid var(--app-text-color-secondary);
+      border-radius: 8px;
+      padding: 4px;
+      margin: 4px
     }
   }
 
