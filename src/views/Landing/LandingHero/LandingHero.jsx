@@ -36,6 +36,7 @@ function LandingHero() {
       className="landing-hero max-content-width"
       variants={container}
       initial="initial"
+      viewport={{ once: true }}
       animate="show"
     >
       <Stack className="landing-hero-stack" flexDirection="column" alignItems="flex-start">
