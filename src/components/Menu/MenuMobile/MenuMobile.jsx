@@ -75,9 +75,9 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
       opacity: 1,
       x: 0,
       transition: {
-        type: 'tween',
-        delay: i * 0.3,
-        duration: 0.5,
+        type: 'spring',
+        delay: i * 0.04,
+        duration: 0.3,
       },
     }),
     slideOut: (i) => ({
@@ -85,8 +85,8 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
       x: -200,
       transition: {
         type: 'tween',
-        delay: i * 0.05,
-        duration: 0.5,
+        delay: i * 0.04,
+        duration: 0.2,
       },
     }),
     hideMenu: {
