@@ -1,7 +1,7 @@
 @use '../../assets/variables';
 
 .posts {
-  min-height: 100vh;
+  min-height: calc(100vh - 174px);
   margin-top: variables.$rhythm * 10;
 
   &-header {
