@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import { Stack } from '../../../components/index';
 import Bryan from '../../../assets/pictograms/bryan.jpeg';
 
@@ -7,18 +8,57 @@ import './landingIntro.scss';
 
 function LandingIntro() {
   const [t] = useTranslation('', { keyPrefix: 'landing.landingIntro' });
+
+  const container = {
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.05, delayChildren: 0.2 },
+    },
+  };
+
+  const child = {
+    initial: {
+      opacity: 0,
+      y: 25,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
   return (
-    <section className="landing-intro">
-      <div className="max-content-width">
+    <motion.section className="landing-intro">
+      <motion.div
+        className="max-content-width"
+        variants={container}
+        initial="initial"
+        viewport={{ once: true }}
+        whileInView="show"
+      >
         <Stack className="landing-intro-stack" flexDirection="column" alignItems="center">
           <Stack flexDirection="column">
-            <h2 className="landing-intro-header">{t('header')}</h2>
-            <p>{t('about')}</p>
+            <motion.h2
+              className="landing-intro-header"
+              variants={child}
+            >
+              {t('header')}
+            </motion.h2>
+            <motion.p
+              variants={child}
+            >
+              {t('about')}
+            </motion.p>
           </Stack>
-          <img className="landing-intro-picture" src={Bryan} alt="bryan" />
+          <motion.img
+            className="landing-intro-picture"
+            src={Bryan}
+            alt="bryan"
+            variants={child}
+          />
         </Stack>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 
