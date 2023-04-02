@@ -12,7 +12,7 @@ function LandingIntro() {
   const container = {
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.05, delayChildren: 0.2 },
+      transition: { staggerChildren: 0.05, delayChildren: 0.1 },
     },
   };
 
