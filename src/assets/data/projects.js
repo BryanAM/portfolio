@@ -13,15 +13,6 @@ Data Defintion
 
 const projects = [
   {
-    description: 'A simple NextJS application integrating OpenAI Completion API',
-    featured: false,
-    github: 'https://github.com/BryanAM/chat',
-    key: 4,
-    tags: ['NextJS', 'OpenAI', 'ChatGPT'],
-    title: 'Chat Completion',
-    url: 'https://github.com/BryanAM/chat',
-  },
-  {
     description: 'A simple & responsive Korean & English dictionary web application',
     featured: true,
     github: null,
@@ -29,6 +20,15 @@ const projects = [
     tags: ['React', 'JavaScript', 'Node', 'MongoDB', 'GraphQL', 'Express', 'i18next'],
     title: 'Sajeon',
     url: 'https://labs.midknightelectric.com',
+  },
+  {
+    description: 'A simple NextJS application integrating OpenAI Completion API',
+    featured: false,
+    github: 'https://github.com/BryanAM/chat',
+    key: 4,
+    tags: ['NextJS', 'OpenAI', 'ChatGPT'],
+    title: 'Chat Completion',
+    url: 'https://github.com/BryanAM/chat',
   },
   {
     description: 'Get cute & silly cats photos & gifs integrated with the cataas API.',
