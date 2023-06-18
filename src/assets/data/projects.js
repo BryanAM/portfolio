@@ -13,6 +13,15 @@ Data Defintion
 
 const projects = [
   {
+    description: 'A simple NextJS application integrating OpenAI Completion API',
+    featured: false,
+    github: 'https://github.com/BryanAM/chat',
+    key: 4,
+    tags: ['NextJS', 'OpenAI', 'ChatGPT'],
+    title: 'Chat Completion',
+    url: 'https://github.com/BryanAM/chat',
+  },
+  {
     description: 'A simple & responsive Korean & English dictionary web application',
     featured: true,
     github: null,
@@ -38,15 +47,6 @@ const projects = [
     tags: ['React', 'JavaScript', 'motion', 'i18next'],
     title: 'Portfolio Website',
     url: 'https://github.com/BryanAM/portfolio',
-  },
-  {
-    description: 'Get to code faster with a small setup and structure',
-    featured: false,
-    github: 'https://github.com/BryanAM/starter',
-    key: 4,
-    tags: ['React', 'i18next', 'Sass'],
-    title: 'React Start App',
-    url: 'https://github.com/BryanAM/starter',
   },
 ];
 
