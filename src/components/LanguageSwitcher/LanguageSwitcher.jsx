@@ -10,10 +10,10 @@ function LanguageSwitcher() {
       className="text-button"
       type="button"
       onClick={() => {
-        i18next.changeLanguage(i18next.language === 'en' ? 'jp' : 'en');
+        i18next.changeLanguage(i18next.language === 'en-US' ? 'jp' : 'en-US');
       }}
     >
-      {t(`common.${i18next.language === 'en' ? 'jp' : 'en'}`)}
+      {t(`common.${i18next.language === 'en-US' ? 'jp' : 'en-US'}`)}
     </button>
   );
 }
