@@ -119,7 +119,6 @@ function MenuMobile({ menuOpen, setMenuOpen }) {
           <motion.span custom={1} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/" className="font-size-400">{t('menu.home')}</NavLink></motion.span>
           <motion.span custom={2} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/posts" className="font-size-400">{t('menu.posts')}</NavLink></motion.span>
           <motion.span custom={3} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/projects" className="font-size-400">{t('menu.projects')}</NavLink></motion.span>
-          <motion.span custom={4} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/code" className="font-size-400">{t('menu.code')}</NavLink></motion.span>
           <motion.span custom={5} initial="hideMenu" animate={menuOpen ? 'slideIn' : 'slideOut'} variants={navLinkVariants}><NavLink to="/resume" className="font-size-400">{t('menu.resume')}</NavLink></motion.span>
           <Stack>
             <motion.button

@@ -71,7 +71,6 @@ function Menu({ menuOpen, setMenuOpen }) {
           <MotionNavLink variants={child} className="menu-nav-link" to="/">{t('menu.home')}</MotionNavLink>
           <MotionNavLink variants={child} className="menu-nav-link" to="/posts">{t('menu.posts')}</MotionNavLink>
           <MotionNavLink variants={child} className="menu-nav-link" to="/projects">{t('menu.projects')}</MotionNavLink>
-          <MotionNavLink variants={child} className="menu-nav-link" to="/code">{t('menu.code')}</MotionNavLink>
           <MotionNavLink variants={child} className="menu-nav-link" to="/resume">{t('menu.resume')}</MotionNavLink>
           <motion.button variants={child} type="button" className="icon-button" onClick={() => setTheme(theme === 'theme' ? 'theme-dark' : 'theme')}>
             {theme === 'theme' ? <SunIcon /> : <MoonIcon />}

@@ -42,10 +42,12 @@
       {
         "company": "Ernst & Young",
         "experiences": [
-          "Integrated API for internal client form submissions and implemented submission flow UI - mobile first design.",
-          "Built a starter application for rapid prototyping  of web apps; generated sample landing and submission pages.",
-          "Created custom web-components with StencilJS, built to spec including test coverage at a 80% threshold.",
-          "Lead a team of developers to customize a react-mui compononet library style schema for design system alignment."
+          "Migrated an angular 2 codebase to angular 16, improving type safety by introducing unified type declarations, improved maintainability and scalability by refactoring large components into reusable abstractions.",
+          "Built an accessible, scalable web component library for a client with dozens of teams needing to unify their codebase and theming. Improved library to WCAG AA compliance, and test coverage for all components to 80% using jest and puppeteer.",
+          "Developed a vacation settings feature for a mobile application that interacted with IOT devices across a user’s properties using optimistic updates to set modes while away. Technology: React Native.",
+          "Lead a small team of three developers to align a Material UI theme wrapper with a themed component library so multiple teams could slowly adopt our new component library. I managed scope, direction and intake for all work with the themed wrapper.",
+          "Built and deployed a React and Storybook front end documentation tool. The tool integrated salesforce designs and custom designed through collaboration with the UX design team. Created a rapid prototype mock of components to increase the speed of front end development for the backend integration team.",
+          "Organized and lead tech talks to pool knowledge of developer’s current work across multiple client engagements."
         ],
         "dates": "8/2019 - Present",
         "title": "Front End Software Engineer"
@@ -53,7 +55,8 @@
       {
         "company": "Japan Exchange and Teaching Program",
         "experiences": [
-          "Developed, lead, and taught English education curriculum & US culture for 11 schools."
+          "Orchestrated target language and cultural curriculum across 8 elementary and 3 junior high schools.",
+          "Assisted city hall’s sister city program; consulted for speech translations, pen-pals and other intercultural logistics"
         ],
         "dates": "8/2013 - 8/2016",
         "title": "English Teacher"
@@ -69,7 +72,8 @@
       {
         "company": "Apple",
         "experiences": [
-          "Produced over $500,000 in sales within the first three quarters and maintained a 98% promoter score."
+          "Produced over $500,000 in sales within the first three quarters and maintained customer satisfaction score of 98%",
+          "Solved customer issues such as recovering lost data, learning to use new devices, and Japanese language support."
         ],
         "dates": "10/2016 - 5/2018",
         "title": "Specialist"
@@ -77,22 +81,24 @@
     ],
     "other": [
       "Japanese Language Proficiency: Advanced",
-      "US Embassy in Tokyo Japan: 10/2014 - 4/2019: Created volunteer group to assist cultural programs for students.",
-      "Embassy of Japan in DC: Gave keynote presentation on life in Japan and assisted with PR video production"
+      "US Embassy in Tokyo:  Created volunteer organization; assisted with cultural programs for English and study abroad.",
+      "Embassy of Japan in DC: Presented keynote on life and work in Japan for JETs, embassy staff and dignitaries.",
+      "Embassy of Japan in DC: Assisted with Japan Exchange and Teaching program USA’s promotional video and planning."
     ],
     "techStack": [
       "Javascript",
-      "StencilJS",
+      "TypeScript",
       "S(CSS)",
       "HTML",
       "RTL & JEST",
-      "i18next",
-      "Angular"
+      "React",
+      "Next.js",
+      "Storybook"
     ],
     "schools": [
       { 
         "date": "5/2019",
-        "major": "B.S. Computer Science: GPA 3.92",
+        "major": "B.S. Computer Science",
         "name": "Millersville University",
         "extras": [
           "Magna Cum Laude"
