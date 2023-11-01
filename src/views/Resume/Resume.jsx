@@ -8,7 +8,7 @@ import './resume.scss';
 function Resume() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className="max-content-width">
       <Stack className="resume" flexDirection="column">
         <Stack className="resume-headers resume-stack" flexDirection="column" alignItems="center">
           <h1>{t('common.name')}</h1>
