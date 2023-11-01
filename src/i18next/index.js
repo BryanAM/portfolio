@@ -16,7 +16,7 @@ const options = {
     en: {
       common: en,
     },
-    jp: {
+    ja: {
       common: jp,
     },
   },
