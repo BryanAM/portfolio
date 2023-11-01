@@ -53,6 +53,15 @@
         "title": "Front End Software Engineer"
       },
       {
+        "company": "Apple",
+        "experiences": [
+          "Produced over $500,000 in sales within the first three quarters and maintained customer satisfaction score of 98%.",
+          "Solved customer issues such as recovering lost data, learning to use new devices, and Japanese language support."
+        ],
+        "dates": "10/2016 - 5/2018",
+        "title": "Specialist"
+      },
+      {
         "company": "Japan Exchange and Teaching Program",
         "experiences": [
           "Orchestrated target language and cultural curriculum across 8 elementary and 3 junior high schools.",
@@ -60,23 +69,6 @@
         ],
         "dates": "8/2013 - 8/2016",
         "title": "English Teacher"
-      },
-      {
-        "company": "Northrop Grumman",
-        "experiences": [
-          "Built a full stack, data sending, web application tool for the developer team using Django, Python, HTML, CSS and JS."
-        ],
-        "dates": "5/2018 - 8/2018",
-        "title": "Software Engineering Intern"
-      },
-      {
-        "company": "Apple",
-        "experiences": [
-          "Produced over $500,000 in sales within the first three quarters and maintained customer satisfaction score of 98%",
-          "Solved customer issues such as recovering lost data, learning to use new devices, and Japanese language support."
-        ],
-        "dates": "10/2016 - 5/2018",
-        "title": "Specialist"
       }
     ],
     "other": [
