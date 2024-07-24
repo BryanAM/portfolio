@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && surge --project ./build --domain bryan-aument.surge.sh",
+    "deploy": "yarn run build && surge --project ./build --domain bryan-aument.surge.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "yarn run eslint ./src",

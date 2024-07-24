@@ -40,6 +40,19 @@
     "educationTech": "Education & Tech",
     "jobs": [
       {
+        "company": "SIVA Inc",
+        "experiences": [
+          "Developed and implemented front-end components and tools for an all-in-one digital B2B ad platform.",
+          "Defined product requirements and created epics, stories, and tickets, including defining technical specifications.",
+          "Facilitated and presented internal demos for biweekly sprints in Japanese. Including demoing new features and fixes.",
+          "Collaborated with design and business success teams to improve user experience and specs for feature requests. For example, we improved the user ad journey by halving clicks and reducing ambiguity with affordance",
+          "Used BigQuery to gather data collected from HubSpot and Mix-panel; collaborated with backend teams for API creation of this data.",
+          "Handled small infrastrcture tasks with cloudflare, CORS, & AWS to handle staging and testing URLs"
+        ],
+        "dates": "3/2024 - Present",
+        "title": "Senior Software Engineer"
+      },
+      {
         "company": "Ernst & Young",
         "experiences": [
           "Migrated an angular 2 codebase to angular 16, improving type safety by introducing unified type declarations, improved maintainability and scalability by refactoring large components into reusable abstractions.",
@@ -49,7 +62,7 @@
           "Built and deployed a React and Storybook front end documentation tool. The tool integrated salesforce designs and custom designed through collaboration with the UX design team. Created a rapid prototype mock of components to increase the speed of front end development for the backend integration team.",
           "Organized and lead tech talks to pool knowledge of developer’s current work across multiple client engagements."
         ],
-        "dates": "8/2019 - Present",
+        "dates": "8/2019 - 3/2024",
         "title": "Front End Software Engineer"
       },
       {
@@ -88,7 +101,7 @@
       "Storybook"
     ],
     "schools": [
-      { 
+      {
         "date": "5/2019",
         "major": "B.S. Computer Science",
         "name": "Millersville University",
@@ -96,7 +109,7 @@
           "Magna Cum Laude"
         ]
       },
-      { 
+      {
         "date": "5/2012",
         "major": "B.A. International Politics",
         "name": "The Pennsylvania State University",
