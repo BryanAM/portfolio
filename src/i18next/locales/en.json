@@ -44,10 +44,10 @@
         "experiences": [
           "Developed and implemented front-end components and tools for an all-in-one digital B2B ad platform.",
           "Defined product requirements and created epics, stories, and tickets, including defining technical specifications.",
-          "Facilitated and presented internal demos for biweekly sprints in Japanese. Including demoing new features and fixes.",
+          "Facilitated and presented new features and fixes for internal demos for biweekly sprints in Japanese.",
           "Collaborated with design and business success teams to improve user experience and specs for feature requests. For example, we improved the user ad journey by halving clicks and reducing ambiguity with affordance",
-          "Used BigQuery to gather data collected from HubSpot and Mix-panel; collaborated with backend teams for API creation of this data.",
-          "Handled small infrastrcture tasks with cloudflare, CORS, & AWS to handle staging and testing URLs"
+          "Used BigQuery to gather data from HubSpot and Mix-panel; collaborated with backend teams to serve data via API",
+          "Handled small infrastructure tasks with cloudflare, CORS, & AWS to handle staging and testing URLs."
         ],
         "dates": "3/2024 - Present",
         "title": "Senior Software Engineer"
