@@ -40,14 +40,26 @@
     "educationTech": "Education & Tech",
     "jobs": [
       {
+        "company": "Sajeon",
+        "experiences": [
+          "Designed, developed, deployed CI/CD pipelines for Sajeon, an open-source, full-stack web application enabling Korean-English language learners to search linguistic data.",
+          "Built the frontend architecture using React, Next.js, and TypeScript, implementing dynamic search, server-side rendering (SSR), and API caching for optimal performance. Designed with a mobile-first, responsive layout.",
+          "Developed a scalable backend with MongoDB and GraphQL, supporting real-time database queries and efficient content management for users and administrators.",
+          "Implemented SEO optimizations, including dynamic metadata, sitemap generation, and Open Graph structured data for improved search rankings and SMS sharing.",
+          "Led and mentored a cross-functional team, optimizing workflows and aligning engineering, UX, and product strategy to deliver high-impact features."
+        ],
+        "dates": "12/2020 - Present",
+        "title": "Founder & Technical Lead"
+      },
+      {
         "company": "SIVA Inc",
         "experiences": [
           "Developed and implemented front-end components and tools for an all-in-one digital B2B ad platform.",
-          "Defined product requirements and created epics, stories, and tickets, including defining technical specifications.",
+          "Defined product requirements, created epics, stories, and tickets, and outlined technical specifications.",
           "Facilitated and presented new features and fixes for internal demos for biweekly sprints in Japanese.",
-          "Collaborated with design and business success teams to improve user experience and specs for feature requests. For example, we improved the user ad journey by halving clicks and reducing ambiguity with affordance",
-          "Used BigQuery to gather data from HubSpot and Mix-panel; collaborated with backend teams to serve data via API",
-          "Handled small infrastructure tasks with cloudflare, CORS, & AWS to handle staging and testing URLs."
+          "Used BigQuery to gather data from HubSpot and Mix-panel; collaborated with backend teams to serve data via API.",
+          "Managed infrastructure tasks with Cloudflare, CORS, and AWS to support staging and testing environments.",
+          "Implemented UI performance optimizations, reducing load times and improving page speed for transaction-heavy workflows."
         ],
         "dates": "3/2024 - Present",
         "title": "Senior Software Engineer"
@@ -55,12 +67,14 @@
       {
         "company": "Ernst & Young",
         "experiences": [
-          "Migrated an angular 2 codebase to angular 16, improving type safety by introducing unified type declarations, improved maintainability and scalability by refactoring large components into reusable abstractions.",
-          "Built an accessible, scalable web component library for a client with dozens of teams needing to unify their codebase and theming. Improved library to WCAG AA compliance, and test coverage for all components to 80% using jest and puppeteer.",
-          "Developed a vacation settings feature for a mobile application that interacted with IOT devices across a user’s properties using optimistic updates to set modes while away. Technology: React Native.",
-          "Lead a small team of three developers to align a Material UI theme wrapper with a themed component library so multiple teams could slowly adopt our new component library. I managed scope, direction and intake for all work with the themed wrapper.",
-          "Built and deployed a React and Storybook front end documentation tool. The tool integrated salesforce designs and custom designed through collaboration with the UX design team. Created a rapid prototype mock of components to increase the speed of front end development for the backend integration team.",
-          "Organized and lead tech talks to pool knowledge of developer’s current work across multiple client engagements."
+          "Built accessible, scalable web component libraries and design systems, unifying client codebases using React, TypeScript, CSS, HTML, and Tailwind.",
+          "Improved accessibility compliance (WCAG AA) and test coverage to 80% using Jest, Puppeteer, Testing Library.",
+          "Implemented API-driven UX/UI workflows, integrating via RESTful APIs and GraphQL to handle data interactions.",
+          "Designed and implemented a React Native-based IoT feature (Vacation Settings), enabling users to control devices across multiple properties with optimistic UI updates and offline caching strategies.",
+          "Led a team of three engineers to align a Material UI theme wrapper with a custom component library, ensuring consistent theming, scalability, and framework-agnostic usage across multiple teams.",
+          "Built and deployed React + Storybook front-end documentation tools, streamlining component integration with Salesforce designs and UX team input, accelerating backend development.",
+          "Implemented advanced state management (Redux, Context API) to optimize performance, reduce re-renders, and improve maintainability.",
+          "Led company-wide tech talks to drive cross-team collaboration and best practices."
         ],
         "dates": "8/2019 - 3/2024",
         "title": "Front End Software Engineer"
