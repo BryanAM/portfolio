@@ -10,7 +10,7 @@
   },
   "landing": {
     "hero": {
-      "intro": "I'm a software engineer and I build user focused web tools and applications. My current focus is on bringing theming and internationalization to an eclectic group of projects."
+      "intro": "I'm a frontend engineer specializing in building high-performance web applications, scalable design systems, and internationalized user experiences. I’ve led projects ranging from open-source dictionaries to enterprise B2B platforms, optimizing performance, accessibility, and UI architecture. My focus is on creating seamless, data-driven interfaces with React, Next.js, and modern front-end technologies."
     },
     "landingIntro": {
       "about": "My current work is foucused around user centered UX/UI design front-end implementation. On the side, I'm building my knowledge base around all things web development, Japanese, Korean, and more.",
