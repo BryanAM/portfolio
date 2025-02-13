@@ -1,13 +1,13 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { Stack } from '../../../components/index';
-import Bryan from '../../../assets/pictograms/bryan.jpeg';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { Stack } from "../../../components/index";
+import Bryan from "../../../assets/pictograms/bryan.jpeg";
 
-import './landingIntro.scss';
+import "./landingIntro.scss";
 
 function LandingIntro() {
-  const [t] = useTranslation('', { keyPrefix: 'landing.landingIntro' });
+  const [t] = useTranslation("", { keyPrefix: "landing.landingIntro" });
 
   const container = {
     show: {
@@ -36,19 +36,16 @@ function LandingIntro() {
         viewport={{ once: true }}
         whileInView="show"
       >
-        <Stack className="landing-intro-stack" flexDirection="column" alignItems="center">
+        <Stack
+          className="landing-intro-stack"
+          flexDirection="column"
+          alignItems="center"
+        >
           <Stack flexDirection="column">
-            <motion.h2
-              className="landing-intro-header"
-              variants={child}
-            >
-              {t('header')}
+            <motion.h2 className="landing-intro-header" variants={child}>
+              {t("header")}
             </motion.h2>
-            <motion.p
-              variants={child}
-            >
-              {t('about')}
-            </motion.p>
+            <motion.p variants={child}>{t("about")}</motion.p>
           </Stack>
           <motion.img
             className="landing-intro-picture"

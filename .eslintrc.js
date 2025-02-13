@@ -29,6 +29,8 @@ module.exports = {
         some: ['nesting', 'id'],
       },
     }],
+    "quotes": ["off"],
+    "comma-dangle": "off"
   },
   overrides: [{
     files: ['**/*.jsx'],

@@ -1,6 +1,7 @@
-@use '../../assets/variables';
+@use "../../assets/variables";
 
 .projects {
+  min-height: 100vh;
   margin-top: variables.$rhythm * 10;
 
   .posts-header {
@@ -15,5 +16,4 @@
       gap: 16px;
     }
   }
-
 }

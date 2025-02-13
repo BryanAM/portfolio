@@ -11,6 +11,12 @@ const postData = [
     id: 2,
     url: 'https://studio.ey.com/blog/welcome-developer/',
   },
+  {
+    description: 'Unlike other engineering disciplines, software development - specifically web development - doesn\'t have legally required regulations to operate on the web.',
+    header: 'Development, one of life\'s teachers',
+    id: 3,
+    url: 'https://dev.to/itsmebryan/development-one-of-lifes-teachers-51h8',
+  },
 ];
 
 export default postData;

@@ -19,7 +19,7 @@ const projects = [
     key: 1,
     tags: ['React', 'JavaScript', 'Node', 'MongoDB', 'GraphQL', 'Express', 'i18next'],
     title: 'Sajeon',
-    url: 'https://stage.midknightelectric.com',
+    url: 'https://sajeon.org',
   },
   {
     description: 'A simple NextJS application integrating OpenAI Completion API',
