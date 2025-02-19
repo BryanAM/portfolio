@@ -2,7 +2,7 @@
   "name": "starter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://itsbryan.me",
+  "homepage": "https://gitname.github.io/portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -23,7 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "yarn run build && surge --project ./build --domain bryan-aument.surge.sh",
+    "surge:deploy": "yarn run build && surge --project ./build --domain bryan-aument.surge.sh",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "yarn run eslint ./src",
@@ -54,7 +55,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "gh-pages": "^4.0.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0"
   }
